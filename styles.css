@@ -945,6 +945,19 @@ div.footerCopy{
     overflow: hidden;
     transition: all 0.2s ease;
     ;
+    
+  }
+  .menu-items.open{
+    top: 25%;
+  }
+  .header.contrasting .menu-items.open{
+    top: 30%;
+  }
+  .menu-items.open a{
+    font-size: small;
+  }
+  .dropdown-menu.expandable a{
+    font-size: x-small;
   }
   .expand-btn.open + .expandable {
     max-height: 100%;
