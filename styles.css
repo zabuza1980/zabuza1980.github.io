@@ -949,15 +949,17 @@ div.footerCopy{
   }
   .menu-items.open{
     top: 25%;
+    width: 100%;
   }
   .header.contrasting .menu-items.open{
     top: 30%;
   }
   .menu-items.open a{
-    font-size: small;
+    font-size: large;
   }
   .dropdown-menu.expandable a{
-    font-size: x-small;
+    font-size: small;
+    width: 100vw;
   }
   .expand-btn.open + .expandable {
     max-height: 100%;
