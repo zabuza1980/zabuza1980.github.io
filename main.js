@@ -2,8 +2,7 @@
 const menuBtn = document.querySelector(".menu-btn");
 const menuItems = document.querySelector(".menu-items");
 const expandBtn = document.querySelectorAll(".expand-btn");
-const tabaActive = document.querySelectorAll("a")
-
+const tabaActive = document.querySelectorAll("a");
 // pojewianie sie na scroolu
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
@@ -11,25 +10,25 @@ const sectionOne = document.querySelector(".home-intro");
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
-const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
-};
+// const sectionOneOptions = {
+//   rootMargin: "-200px 0px 0px 0px"
+// };
 
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled");
-    } else {
-      header.classList.remove("nav-scrolled");
-    }
-  });
-},
-sectionOneOptions);
+// const sectionOneObserver = new IntersectionObserver(function(
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach(entry => {
+//     if (!entry.isIntersecting) {
+//       header.classList.add("nav-scrolled");
+//     } else {
+//       header.classList.remove("nav-scrolled");
+//     }
+//   });
+// },
+// sectionOneOptions);
 
-sectionOneObserver.observe(sectionOne);
+// sectionOneObserver.observe(sectionOne);
 
 const appearOptions = {
   threshold: 0,
@@ -69,21 +68,40 @@ expandBtn.forEach((btn) => {
     btn.classList.toggle("open");
   });
 });
-var swiper = new Swiper('.swiper-wrapperr', {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
-    depth: 200,
-    modifier: 1,
-    slideShadows: true,
-  },
-  loop: true,
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-  },
+// czcionka i odstępy pomiędzy liniami
+function increaseFontSizeBy1px() {
+  txt = document.getElementById('b');
+  style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+  currentSize = parseFloat(style);
+  txt.style.fontSize = (currentSize + 1) + 'px';
+  style = window.getComputedStyle(txt, null).getPropertyValue('line-height');
+  currentSize = parseFloat(style);
+  txt.style.lineHeight = (currentSize + 2) + 'px';
+}
+function decreaseFontSizeBy1px() {
+  txt = document.getElementById('b');
+  style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+  currentSize = parseFloat(style);
+  txt.style.fontSize = (currentSize - 1) + 'px';
+  style = window.getComputedStyle(txt, null).getPropertyValue('line-height');
+  currentSize = parseFloat(style);
+  txt.style.lineHeight = (currentSize + -2) + 'px';
+}
+// fadeout img
+window.addEventListener('scroll', function(){
+  document.querySelector('.home-intro').style.opacity = 1 - +window.pageYOffset/700+"";
+} )
+// kontrast
+document.getElementById('kontrast').addEventListener('click', function (){
+  document.body.classList.toggle('contrasting');
+  document.querySelector('header').classList.toggle('contrasting');
+  document.querySelector('.dropdown-menu').classList.toggle('contrasting');
+  document.querySelector('.menu-right').classList.toggle('contrasting');
+  document.querySelector('.mega-menu').classList.toggle('contrasting');
+  document.querySelector('.mega-menu.blog.expandable').classList.toggle('contrasting');
+  document.getElementById('acc').classList.toggle('contrasting');
+  document.querySelector('.home-intro').classList.toggle('contrasting');
+  document.querySelector('.home-about').classList.toggle('contrasting');
+  document.querySelector('.home-more-stuff').classList.toggle('contrasting');
+  document.querySelector('.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal').classList.toggle('contrasting');
 });
