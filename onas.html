@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tesowe menu</title>
+    <title>Pracownicy</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -14,160 +14,215 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 <body id="b">
-    <header class="header">
-        <a href="#" class="logo">
-          <img class="logoBiblioteki" src="img/GBPlogoLG.png" alt="" title="Logo naszej biblioteki" >
-          <img class="logoBiblioteki2" src="img/logoCiemne.png" alt="" title="Logo naszej biblioteki" >
-        </a>
-        <div class="menu-btn">
-          <div class="menu-btn__lines"></div>
-        </div>
-        <ul class="menu-items">
-          <li><a href="#" class="menu-item">Kontakt</a></li>
-          <li class="dropdown">
-            <a href="#" class="menu-item expand-btn">Kultura</a>
-            <ul class="dropdown-menu expandable">
-              <li><a href="#" class="menu-item">Imprezy</a></li>
-              <li><a href="#" class="menu-item">Jazda konna</a></li>
-              <li class="dropdown dropdown-right">
-                <a href="#" class="menu-item expand-btn">Zabytki<i class="fas fa-angle-right"></i></a>
-                <ul class="menu-right expandable">
-                  <li><a href="#" class="menu-item">Muzeum</a></li>
-                  <li><a href="#" class="menu-item">Stadnina</a></li>
-                  <li><a href="#" class="menu-item">Katakumby</a></li>
-                  <li><a href="#" class="menu-item">Kościół</a></li>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img class="logoBiblioteki" src="img/GBPlogoLG.png" alt="" title="Logo naszej biblioteki" >
+      <img class="logoBiblioteki2" src="img/logoCiemne.png" alt="" title="Logo naszej biblioteki" >
+    </a>
+    <div class="menu-btn">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="#" class="menu-item">Kontakt</a></li>
+      <li>
+        <a href="#" class="menu-item expand-btn">Muzeum Rodu Krasińskich</a>
+        <div class="mega-menu expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Wspaniałe Zabytki</h2>
+                <a href="#" class="img-wrapper"
+                  ><span class="img"
+                    ><img
+                      src="img/wieża.jpg"
+                      alt="Bibliotekarka przy półkach" title="Bibliotekarka odkładająca książkę na stare regaly biblioteczne" /></span
+                ></a>
+                <p>Wszytkiego o naszym Muzeum</p>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Wierza</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Obrazy</a></li>
+                  <li><a href="#">Eksponaty</a></li>
                 </ul>
-              </li>
-              <li><a href="#" class="menu-item">Koła Gospodyń</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="menu-item expand-btn">Książka</a>
-            <div class="mega-menu expandable">
-              <div class="content">
-                <div class="col">
-                  <section>
-                    <h2>Nasza Historia</h2>
-                    <a href="#" class="img-wrapper"
-                      ><span class="img"
-                        ><img
-                          src="img/Historia.png"
-                          alt="Bibliotekarka przy półkach" title="Bibliotekarka odkładająca książkę na stare regaly biblioteczne" /></span
-                    ></a>
-                    <p>Dowiedz się wszytkiego o naszej Bibliotece</p>
-                  </section>
-                </div>
-                <div class="col">
-                  <section>
-                    <h2>Nowości </h2>
-                    <ul class="mega-links">
-                      <li><a href="#">Kryminały</a></li>
-                      <li><a href="#">Romanse</a></li>
-                      <li><a href="#">Thrilery</a></li>
-                      <li><a href="#">Młodzierzowa</a></li>
-                      <li><a href="#">Dziecięca</a></li>
-                    </ul>
-                  </section>
-                </div>
-                <div class="col">
-                  <section>
-                    <h2>Formularze</h2>
-                    <ul class="mega-links">
-                      <li><a href="#">Książka</a></li>
-                      <li><a href="#">Impreza</a></li>
-                      <li><a href="#">Spotkanie</a></li>
-                      <li><a href="#">Szkolenie</a></li>
-                      <li><a href="#">Grupa</a></li>
-                    </ul>
-                  </section>
-                </div>
-                <div class="col">
-                  <section>
-                    <h2>Oferta</h2>
-                    <ul class="mega-links">
-                      <li><a href="#">Wydarzenia</a></li>
-                      <li><a href="#">Programy</a></li>
-                      <li><a href="#">Katalog</a></li>
-                      <li><a href="#">Zbiory</a></li>
-                      <li><a href="#">Szkolenia</a></li>
-                    </ul>
-                  </section>
-                </div>
-              </div>
+              </section>
             </div>
-          </li>
-          <li>
-            <a href="#" class="menu-item expand-btn">Aktualności</a>
-            <div class="mega-menu blog expandable">
-              <div class="content">
-                <div class="col">
-                  <a href="#" class="img-wrapper"
-                    ><span class="img"
-                      ><img
-                        src="img/Otwarcie.png"
-                        alt="Nareszcie  otwarci" title="Zdjęcie naszej bilbioteki z dużym niebiesko czerwonym tytułem otwieramy ponownie" /></span
-                  ></a>
-                  <h2>Znowu otwarci</h2>
-                  <p>
-                    Wspaniałe wieści dla wszystkich miłośników książki, już 
-                    od jutra, biblioteka będzie ponownie otwarta dla 
-                    czytelników. Wypożyczenia jednak pozostaną na ..
-                  </p>
-                  <a href="#" class="read-more">Czytaj dalej...</a>
-                </div>
-                <div class="col">
-                  <a href="#" class="img-wrapper"
-                    ><span class="img"
-                      ><img
-                        src="img/KsiążkaTelefon.png"
-                        alt="Książki na telefon" title="Książki na telefon. 
-                        Grafika przedstawiająca ogólne zasady nowej usługi" /></span
-                  ></a>
-                  <h2>Nowa usługa</h2>
-                  <p>
-                    Wiemy jak trudne było wypożyczanie nowych książek dla osób 
-                    60+ dlatego też już od jutra rozpoczynamy akcję "Książki na 
-                    telefon", 
-                  </p>
-                  <a href="#" class="read-more">Czytaj dalej...</a>
-                </div>
-                <div class="col">
-                  <a href="#" class="img-wrapper"
-                    ><span class="img"
-                      ><img
-                        src="img/Konkurs.jpg"
-                        alt="Literacko kulinarny konkurs świąteczny" title="Grafika z 
-                        choinką zrobioną z sałaty, wędliny, ciasta, przystrjoną 
-                        żurawiną i gwiazdą z sera żółtego" /></span
-                  ></a>
-                  <h2>Super Konkurs</h2>
-                  <p>
-                    Tym razem będą wymagane zdolności kulinarne i literackie. 
-                    Szczegółowy opis konkursu w napisach dołączonych do filmu
-                  </p>
-                  <a href="#" class="read-more">Czytaj dalej...</a>
-                </div>
-              </div>
+            <div class="col">
+              <section>
+                <h2>Kościuł</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Krypty</a></li>
+                  <li><a href="#">Prezbiterium</a></li>
+                  <li><a href="#">Skarbiec</a></li>
+                  <li><a href="#">Freski</a></li>
+                  <li><a href="#">Obrazy</a></li>
+                </ul>
+              </section>
             </div>
-          </li>
-          <li class="dropdown" id="acc">
-            <a href="#" class="menu-item expand-btn">Dostępność</a>
-            <ul class="dropdown-menu expandable">
-              <li><a type="button" value="Increase Font Size 1px" onclick="increaseFontSizeBy1px()" title="Zwiększ rozmiar czcionki" tabindex="1"><i class="fas fa-search-plus"></i>Ziwększ czcionkę</a></li>
-              <li><a type="button" value="Decrease Font Size 1px" onclick="decreaseFontSizeBy1px()" title="Zmiejsz rozmiar czcionki" tabindex="1"><i class="fas fa-search-minus"></i>Zmiejsz czcionkę</a></li>
-                </li>
-              <li><a href="#" class="menu-item"><input type="checkbox" id="kontrast" >Kontrast</a></li>
-            </ul>
-          </li>
-        </ul>
-      
-    </header>
+            <div class="col">
+              <section>
+                <h2>Stadnina</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Wydarzenia</a></li>
+                  <li><a href="#">Nauka jazdy</a></li>
+                  <li><a href="#">Obiekty zabytkowe</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="menu-item expand-btn">Książka</a>
+        <div class="mega-menu ksi expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Nasza Historia</h2>
+                <a href="#" class="img-wrapper"
+                  ><span class="img"
+                    ><img
+                      src="img/Historia.png"
+                      alt="Bibliotekarka przy półkach" title="Bibliotekarka odkładająca książkę na stare regaly biblioteczne" /></span
+                ></a>
+                <p>Dowiedz się wszytkiego o naszej Bibliotece</p>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Nowości </h2>
+                <ul class="mega-links">
+                  <li><a href="#">Kryminały</a></li>
+                  <li><a href="#">Romanse</a></li>
+                  <li><a href="#">Thrilery</a></li>
+                  <li><a href="#">Młodzierzowa</a></li>
+                  <li><a href="#">Dziecięca</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Formularze</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Książka</a></li>
+                  <li><a href="#">Impreza</a></li>
+                  <li><a href="#">Spotkanie</a></li>
+                  <li><a href="#">Szkolenie</a></li>
+                  <li><a href="#">Grupa</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Oferta</h2>
+                <ul class="mega-links">
+                  <li><a href="#">Wydarzenia</a></li>
+                  <li><a href="#">Programy</a></li>
+                  <li><a href="#">Katalog</a></li>
+                  <li><a href="#">Zbiory</a></li>
+                  <li><a href="#">Szkolenia</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="menu-item expand-btn">Aktualności</a>
+        <div class="mega-menu akt expandable">
+          <div class="content">
+            <div class="col">
+              <a href="#" class="img-wrapper"
+                ><span class="img"
+                  ><img
+                    src="img/Otwarcie.png"
+                    alt="Nareszcie  otwarci" title="Zdjęcie naszej bilbioteki z dużym niebiesko czerwonym tytułem otwieramy ponownie" /></span
+              ></a>
+              <h2>Znowu otwarci</h2>
+              <p>
+                Wspaniałe wieści dla wszystkich miłośników książki, już 
+                od jutra, biblioteka będzie ponownie otwarta dla 
+                czytelników. Wypożyczenia jednak pozostaną na ..
+              </p>
+              <a href="#" class="read-more">Czytaj dalej...</a>
+            </div>
+            <div class="col">
+              <a href="#" class="img-wrapper"
+                ><span class="img"
+                  ><img
+                    src="img/KsiążkaTelefon.png"
+                    alt="Książki na telefon" title="Książki na telefon. 
+                    Grafika przedstawiająca ogólne zasady nowej usługi" /></span
+              ></a>
+              <h2>Nowa usługa</h2>
+              <p>
+                Wiemy jak trudne było wypożyczanie nowych książek dla osób 
+                60+ dlatego też już od jutra rozpoczynamy akcję "Książki na 
+                telefon", 
+              </p>
+              <a href="#" class="read-more">Czytaj dalej...</a>
+            </div>
+            <div class="col">
+              <a href="#" class="img-wrapper"
+                ><span class="img"
+                  ><img
+                    src="img/Konkurs.jpg"
+                    alt="Literacko kulinarny konkurs świąteczny" title="Grafika z 
+                    choinką zrobioną z sałaty, wędliny, ciasta, przystrjoną 
+                    żurawiną i gwiazdą z sera żółtego" /></span
+              ></a>
+              <h2>Super Konkurs</h2>
+              <p>
+                Tym razem będą wymagane zdolności kulinarne i literackie. 
+                Szczegółowy opis konkursu w napisach dołączonych do filmu
+              </p>
+              <a href="#" class="read-more">Czytaj dalej...</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="menu-item expand-btn">Dostępność</a>
+        <div class="mega-menu dos expandable">
+          <div class="content">
+            <div class="col">
+              <section>
+                <h2>Wspaniałe Zabytki</h2>
+                <a href="#" class="img-wrapper"
+                  ><span class="img"
+                    ><img
+                      src="img/wieża.jpg"
+                      alt="Bibliotekarka przy półkach" title="Bibliotekarka odkładająca książkę na stare regaly biblioteczne" /></span
+                ></a>
+                <p>Wszytkiego o naszym Muzeum</p>
+              </section>
+            </div>
+            <div class="col">
+              <section>
+                <h2>Wierza</h2>
+                <ul class="mega-links">
+                  <li><a type="button" value="Increase Font Size 1px" onclick="increaseFontSizeBy1px()" title="Zwiększ rozmiar czcionki" tabindex="1"><i class="fas fa-search-plus"></i>Ziwększ czcionkę</a></li>
+                  <li><a type="button" value="Decrease Font Size 1px" onclick="decreaseFontSizeBy1px()" title="Zmiejsz rozmiar czcionki" tabindex="1"><i class="fas fa-search-minus"></i>Zmiejsz czcionkę</a></li>
+                  <li><a href="#" class="menu-item"><input type="checkbox" id="kontrast" >Kontrast</a></li>
+                </ul>
+              </section>
+            </div>
+            </div>
+          </div>
+      </li>
+    </ul>
+  
+</header>
 <section class="main-content">       
   <section class="home-intro">
-    <h3>Gminna Biblioteka Publiczna w Krasnem</h3>
+    <img src="img/background.jpg" id="bg" alt="">
+    <div id="text">
     <?xml version="1.0" encoding="UTF-8"?>
     <svg class="samologo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="187.5pt" height="187.499995pt" viewBox="0 0 187.5 187.499995" version="1.2">          
         <g id="surface1">
@@ -213,8 +268,10 @@
       <path style=" stroke:none;fill-rule:nonzero;fill:rgb(95.689392%,81.959534%,13.328552%);fill-opacity:1;" d="M 151.027344 92.417969 C 150.71875 92.417969 150.410156 92.445312 150.109375 92.507812 C 149.804688 92.566406 149.511719 92.65625 149.226562 92.773438 C 148.941406 92.894531 148.667969 93.039062 148.414062 93.210938 C 148.15625 93.378906 147.917969 93.574219 147.699219 93.792969 C 147.480469 94.011719 147.285156 94.25 147.113281 94.507812 C 146.945312 94.761719 146.796875 95.035156 146.679688 95.320312 C 146.5625 95.605469 146.472656 95.898438 146.414062 96.203125 C 146.351562 96.503906 146.324219 96.8125 146.324219 97.121094 C 146.324219 97.429688 146.351562 97.734375 146.414062 98.039062 C 146.472656 98.339844 146.5625 98.632812 146.679688 98.921875 C 146.796875 99.207031 146.945312 99.476562 147.113281 99.734375 C 147.285156 99.988281 147.480469 100.226562 147.699219 100.445312 C 147.917969 100.664062 148.15625 100.859375 148.414062 101.03125 C 148.667969 101.203125 148.941406 101.347656 149.226562 101.464844 C 149.511719 101.582031 149.804688 101.671875 150.109375 101.734375 C 150.410156 101.792969 150.71875 101.824219 151.027344 101.824219 C 151.335938 101.824219 151.640625 101.792969 151.945312 101.734375 C 152.246094 101.671875 152.539062 101.582031 152.824219 101.464844 C 153.113281 101.347656 153.382812 101.203125 153.640625 101.03125 C 153.894531 100.859375 154.132812 100.664062 154.351562 100.445312 C 154.570312 100.226562 154.765625 99.988281 154.9375 99.734375 C 155.109375 99.476562 155.253906 99.207031 155.371094 98.921875 C 155.488281 98.632812 155.578125 98.339844 155.640625 98.039062 C 155.699219 97.734375 155.730469 97.429688 155.730469 97.121094 C 155.730469 96.8125 155.699219 96.503906 155.640625 96.203125 C 155.578125 95.898438 155.488281 95.605469 155.371094 95.320312 C 155.253906 95.035156 155.109375 94.761719 154.9375 94.507812 C 154.765625 94.25 154.570312 94.011719 154.351562 93.792969 C 154.132812 93.574219 153.894531 93.378906 153.640625 93.210938 C 153.382812 93.039062 153.113281 92.894531 152.824219 92.773438 C 152.539062 92.65625 152.246094 92.566406 151.945312 92.507812 C 151.640625 92.445312 151.335938 92.417969 151.027344 92.417969 Z M 151.027344 92.417969 "/>
       </g>
       </svg>
-
-          <h5>Nasi pracownicy</h5>
+      <h3>Nasi<br>Pracownicy</h3>
+      <span>&#8211;
+          <h5>Specjaliści Multi Bibliotekaże</h5>
+        </div>
         </section>
   
         <div class="home-about">
@@ -295,21 +352,21 @@
             </div>
             </div>
         </div>
-  
-
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/RadioRekord.png" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><img src="img/GminaKrasne.png" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><img src="img/Błazejczyk.jpg" alt="" class="swiper-image" ></div>
-            <div class="swiper-slide"><img src="img/RadPol.jpg" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><img src="img/Opinogóra.jpg" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><img src="img/PrzasnyszBiblioteka.jpg" alt="" class="swiper-image"></div>
-        
+        <div class="swiper-container">
+          <hr>
+          <h2>Nasi partnerzy</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><h6>Radio Rekord Ciechanów</h6><img src="img/RadioRekord.png" alt="" class="swiper-image"></div>
+                <div class="swiper-slide"><h6>Gmina Krasne</h6><img src="img/GminaKrasne.png" alt="" class="swiper-image"></div>
+                <div class="swiper-slide"><h6>Danuta Błażejczyk</h6><img src="img/Błazejczyk.jpg" alt="" class="swiper-image" ></div>
+                <div class="swiper-slide"><h6>Rad-Pol Meble</h6><img src="img/RadPol.jpg" alt="" class="swiper-image"></div>
+                <div class="swiper-slide"><h6>Muzeum w Opinogórze</h6><img src="img/Opinogóra.jpg" alt="" class="swiper-image"></div>
+                <div class="swiper-slide"><h6>Biblioteaka w Przasnyszu</h6><img src="img/PrzasnyszBiblioteka.jpg" alt="" class="swiper-image"></div>
+            
+              </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
           </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
       <footer>
         <!-- fotter -->
         <div class="footer-wrap">
@@ -372,26 +429,6 @@
           </div>
         </div>
       </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 20,
-            stretch: 0,
-            depth: 200,
-            modifier: 1,
-            slideShadows: true,
-          },
-          loop: true,
-          autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-          },
-        });
-      </script>
+
 </body>
 </html>

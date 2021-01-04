@@ -95,13 +95,41 @@ window.addEventListener('scroll', function(){
 document.getElementById('kontrast').addEventListener('click', function (){
   document.body.classList.toggle('contrasting');
   document.querySelector('header').classList.toggle('contrasting');
-  document.querySelector('.dropdown-menu').classList.toggle('contrasting');
-  document.querySelector('.menu-right').classList.toggle('contrasting');
   document.querySelector('.mega-menu').classList.toggle('contrasting');
-  document.querySelector('.mega-menu.blog.expandable').classList.toggle('contrasting');
-  document.getElementById('acc').classList.toggle('contrasting');
+  document.querySelector('.mega-menu.akt.expandable').classList.toggle('contrasting');
+  document.querySelector('.mega-menu.ksi.expandable').classList.toggle('contrasting');
+  document.querySelector('.mega-menu.dos.expandable').classList.toggle('contrasting');
   document.querySelector('.home-intro').classList.toggle('contrasting');
   document.querySelector('.home-about').classList.toggle('contrasting');
+  document.querySelector('.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal').classList.toggle('contrasting'); 
   document.querySelector('.home-more-stuff').classList.toggle('contrasting');
-  document.querySelector('.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal').classList.toggle('contrasting');
 });
+// swiper
+var swiper = new Swiper('.swiper-container', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 60,
+    modifier: 1,
+    slideShadows: true,
+  },
+  loop: true,
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
+});
+// ruchome elementy intro
+let bg = document.getElementById("bg");
+let text = document.getElementById("text");
+
+window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+
+    bg.style.top = value * 0.5 + 'px';
+    text.style.top = value * 0.7 + 'px';
+})
