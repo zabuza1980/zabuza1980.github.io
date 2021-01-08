@@ -621,6 +621,12 @@ body#b.contrasting .fade-in.appear:hover {
  width: 70%;
  border-radius: 40px;
 }
+.home-more-stuff iframe{
+ width: 70%;
+ border-radius: 40px;
+}
+
+
 /* .home-more-stuff p{
   font-size: 30px;
 } */
@@ -1230,8 +1236,13 @@ body#b.contrasting .fade-in.appear {
   .more-stuff-grid img{
     width:100%;
     margin: 10px 0px;
-    border-radius: 3%;
+    border-radius: 40px;
   }
+  .home-more-stuff iframe{
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 40px;
+   }
   p.slide-in.from-right.appear {
     margin-right: 0;
     
