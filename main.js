@@ -9,27 +9,6 @@ const sectionOne = document.querySelector(".home-intro");
 
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
-
-// const sectionOneOptions = {
-//   rootMargin: "-200px 0px 0px 0px"
-// };
-
-// const sectionOneObserver = new IntersectionObserver(function(
-//   entries,
-//   sectionOneObserver
-// ) {
-//   entries.forEach(entry => {
-//     if (!entry.isIntersecting) {
-//       header.classList.add("nav-scrolled");
-//     } else {
-//       header.classList.remove("nav-scrolled");
-//     }
-//   });
-// },
-// sectionOneOptions);
-
-// sectionOneObserver.observe(sectionOne);
-
 const appearOptions = {
   threshold: 0,
   rootMargin: "0px 0px -250px 0px"
@@ -77,6 +56,7 @@ function increaseFontSizeBy1px() {
   style = window.getComputedStyle(txt, null).getPropertyValue('line-height');
   currentSize = parseFloat(style);
   txt.style.lineHeight = (currentSize + 2) + 'px';
+  setCookie('czcionka',"courentSize",7);
 }
 function decreaseFontSizeBy1px() {
   txt = document.getElementById('b');
@@ -86,24 +66,12 @@ function decreaseFontSizeBy1px() {
   style = window.getComputedStyle(txt, null).getPropertyValue('line-height');
   currentSize = parseFloat(style);
   txt.style.lineHeight = (currentSize + -2) + 'px';
+  setCookie('czcionka',"courentSize",7);
 }
 // fadeout img
 window.addEventListener('scroll', function(){
   document.querySelector('.home-intro').style.opacity = 1 - +window.pageYOffset/700+"";
 } )
-// kontrast
-document.getElementById('kontrast').addEventListener('click', function (){
-  document.body.classList.toggle('contrasting');
-  document.querySelector('header').classList.toggle('contrasting');
-  document.querySelector('.mega-menu').classList.toggle('contrasting');
-  document.querySelector('.mega-menu.akt.expandable').classList.toggle('contrasting');
-  document.querySelector('.mega-menu.ksi.expandable').classList.toggle('contrasting');
-  document.querySelector('.mega-menu.dos.expandable').classList.toggle('contrasting');
-  document.querySelector('.home-intro').classList.toggle('contrasting');
-  document.querySelector('.home-about').classList.toggle('contrasting');
-  document.querySelector('.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal').classList.toggle('contrasting'); 
-  document.querySelector('.home-more-stuff').classList.toggle('contrasting');
-});
 // swiper
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
@@ -133,3 +101,97 @@ window.addEventListener('scroll', function(){
     bg.style.top = value * 0.5 + 'px';
     text.style.top = value * 0.7 + 'px';
 })
+// cookie logick + kontrast
+
+function setCookie(name,value,days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  // the following code allows multiple cookie values and splits them apart
+  for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+function eraseCookie(name) {   
+  document.cookie = name+'=; Max-Age=-99999999;';  
+}
+function enableDarkMode() {
+  $( "body" ).addClass( "contrasting" );
+  // document.body.classList.toggle('contrasting');
+  $( "header" ).addClass( "contrasting" );
+  // document.querySelector('header').classList.toggle('contrasting');
+  $( ".dropdown-menu" ).addClass( "contrasting" );
+  // document.querySelector('.dropdown-menu').classList.toggle('contrasting');
+  $( ".menu-right" ).addClass( "contrasting" );
+  // document.querySelector('.menu-right').classList.toggle('contrasting');
+  $( ".mega-menu" ).addClass( "contrasting" );
+  // document.querySelector('.mega-menu').classList.toggle('contrasting');
+  $( ".mega-menu.blog.expandable" ).addClass( "contrasting" );
+  // document.querySelector('.mega-menu.blog.expandable').classList.toggle('contrasting');
+  $( "acc" ).addClass( "contrasting" );
+  // document.getElementById('acc').classList.toggle('contrasting');
+  $( ".home-intro" ).addClass( "contrasting" );
+  // document.querySelector('.home-intro').classList.toggle('contrasting');
+  $( ".home-about" ).addClass( "contrasting" );
+  // document.querySelector('.home-about').classList.toggle('contrasting');
+  $( ".home-more-stuff" ).addClass( "contrasting" );
+  // document.querySelector('.home-more-stuff').classList.toggle('contrasting');
+  $( ".swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal" ).addClass( "contrasting" );
+  // document.querySelector('.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal').classList.toggle('contrasting');
+  setCookie('darkMode',"1",7);
+}
+
+function disableDarkMode() {
+$( "body" ).removeClass( "dark" );
+$( "body" ).removeClass( "contrasting" );
+  // document.body.classList.toggle('contrasting');
+  $( "header" ).removeClass( "contrasting" );
+  // document.querySelector('header').classList.toggle('contrasting');
+  $( ".dropdown-menu" ).removeClass( "contrasting" );
+  // document.querySelector('.dropdown-menu').classList.toggle('contrasting');
+  $( ".menu-right" ).removeClass( "contrasting" );
+  // document.querySelector('.menu-right').classList.toggle('contrasting');
+  $( ".mega-menu" ).removeClass( "contrasting" );
+  // document.querySelector('.mega-menu').classList.toggle('contrasting');
+  $( ".mega-menu.blog.expandable" ).removeClass( "contrasting" );
+  // document.querySelector('.mega-menu.blog.expandable').classList.toggle('contrasting');
+  $( "acc" ).removeClass( "contrasting" );
+  // document.getElementById('acc').classList.toggle('contrasting');
+  $( ".home-intro" ).removeClass( "contrasting" );
+  // document.querySelector('.home-intro').classList.toggle('contrasting');
+  $( ".home-about" ).removeClass( "contrasting" );
+  // document.querySelector('.home-about').classList.toggle('contrasting');
+  $( ".home-more-stuff" ).removeClass( "contrasting" );
+  // document.querySelector('.home-more-stuff').classList.toggle('contrasting');
+  $( ".swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal" ).removeClass( "contrasting" );
+  // document.querySelector('.swiper-container.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal').classList.toggle('contrasting');
+  setCookie('darkMode',"0",7);
+}
+document.getElementById('kontrast').addEventListener('click', function () {
+  if( $( "body" ).hasClass( "contrasting" )) {
+    disableDarkMode();
+  } else {
+    enableDarkMode();
+  }
+});
+document.addEventListener("DOMContentLoaded", function(){
+var darkMode = getCookie('darkMode');
+if (darkMode == "1") {
+    // use darkmode
+    enableDarkMode();
+} else {
+    // no darkmode
+    disableDarkMode();
+}
+});
