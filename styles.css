@@ -112,12 +112,13 @@ i{
 iframe{
   width: 80%;
   height: 450px;
-  frameborder: 0;
-  border:0;
-  allowfullscreen:"";
-  aria-hidden: false;
-  tabindex:"0";
 }
+.main-content iframe{
+  justify-items: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 40px;
+ }
 .contrasting {
  color :gold;
  background-color: black;
@@ -1478,6 +1479,12 @@ footer .footer-wrap{
   footer{
     min-height: auto;
   }
+  .main-content iframe{
+    justify-items: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 40px;
+   }
   .home-intro
 {
     min-height: 500px;
