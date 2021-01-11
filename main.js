@@ -195,3 +195,19 @@ if (darkMode == "1") {
     disableDarkMode();
 }
 });
+// link po dwukrotnym kliknieńciu myszka
+jQuery(function($) {
+  $('#golink').click(function() {
+      return false;
+  }).dblclick(function() {
+      window.location = this.href;
+      return false;
+  }).keydown(function(event) {
+      switch (event.which) {
+          case 13: // Enter
+          case 32: // Space
+              window.location = this.href;
+              return false;
+      }
+  });
+});

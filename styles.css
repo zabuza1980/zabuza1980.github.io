@@ -374,13 +374,11 @@ z-index: 1;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: #cc6123;
     min-height: 900px;
     color: white;
     font-family: sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    /* padding: 100px 10%; */
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -506,6 +504,7 @@ z-index: 1;
     font-size: 2em;
     z-index: 0;
 }
+
 .home-intro .samologo{
  display: inline;
 }.home-intro.contrasting .samologo{
@@ -627,7 +626,12 @@ body#b.contrasting .fade-in.appear:hover {
  height: 100%;
  border-radius: 40px;
 }
-
+#obrazy{
+  text-align: center;
+ }
+ #eksponaty{
+  text-align: center;
+ }
 
 /* .home-more-stuff p{
   font-size: 30px;
