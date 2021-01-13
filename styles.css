@@ -492,6 +492,39 @@ body#b .contrasting a{
     pointer-events: none;
     z-index: 0;
 }
+#bg1
+{
+    z-index: 0;
+}
+ img#bg1
+{
+    height: 200%;
+}
+#text1{
+  position: relative;
+  color: #fff;
+  font-size: 2em;
+  z-index: 0;
+  
+}
+#bg2
+{
+  display: none;
+    z-index: 0;
+}
+ img#bg2
+{
+  display: none;
+    height: 200%;
+}
+#text2{
+  display: none;
+  position: relative;
+  color: #fff;
+  font-size: 2em;
+  z-index: 0;
+  
+}
 .home-intro.contrasting img
 {
     position: absolute;
@@ -581,8 +614,9 @@ body#b.contrasting  .fade-in.appear.card{
   text-align: center;
   color: blak;
   float: left;
-  margin: 0px 5px 40px 5px ;
+  margin: 0px 5px 10px 5px ;
   width: 20%;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   overflow: hidden;
@@ -673,7 +707,7 @@ body#b.contrasting  .fade-in.appear.card2{
   }
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .fade-in.appear {
@@ -1047,6 +1081,76 @@ img.slide-in.from-left.appear {
   height: 150px;
   width: 150px;
 }
+/* book 3d */
+.mizga
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section#buda
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+section#buda .book
+{
+    position: relative;
+    width: 383px;
+    height: 567px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: 0.5s; 
+}
+section#buda .book:hover
+{
+    transform: rotateY(35deg);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+section#buda .book:active
+{
+    transform: rotateY(180deg);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+section#buda .book::before
+{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    transform-origin: left;
+    background: url(img/side.png);
+    background-position: center;
+    transform: rotateY(90deg);
+}
+section#buda .book::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(img/back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(60px) ;
+}
+section#buda .book img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* foorer */
 footer{
   width: 100%;
@@ -1156,7 +1260,7 @@ div.footerCopy{
   body#b.contrasting  .fade-in.appear.card2{
     /* Add shadows to create the "card" effect */
    
-    width: 16%;
+    width: 25%;
   
   }
 }
@@ -1190,12 +1294,14 @@ div.footerCopy{
       
       margin: 0px 5px 40px 5px ;
       width: 30%;
+      height: 260px;
     
     }
     body#b.contrasting  .fade-in.appear.card2{
       /* Add shadows to create the "card" effect */
       
       width: 30%;
+      height: 260px;
      
     }
 
@@ -1239,6 +1345,20 @@ div.footerCopy{
   .home-about.contrasting {
     padding: 0em 2em 2em 2em;
    
+  }
+  .card2 {
+    /* Add shadows to create the "card" effect */
+  
+    width: 25%;
+    height: 180px;
+  
+  }
+  body#b.contrasting  .fade-in.appear.card2{
+    /* Add shadows to create the "card" effect */
+   
+    width: 25%;
+    height: 180px;
+  
   }
 
 }
@@ -1406,11 +1526,11 @@ body#b.contrasting .fade-in.appear {
    border-top: 0;
  }
   .menu-items.open {
-    transform: translateY(-10deg);
+    transform: translateY(0);
     /* height: fit-content; */
   }
   .menu-items.open {
-    transform: translateY(-10deg);
+    transform: translateY(0);
     /* height: fit-content; */
   }
 
@@ -1528,7 +1648,8 @@ body#b.contrasting .fade-in.appear {
     color: blak;
     float: left;
     margin: 0px 0px 40px 0px ;
-    width: 50%;
+    width: 40%;
+    height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     overflow: hidden;
@@ -1733,6 +1854,17 @@ footer .footer-wrap{
     width: 31%;
    
   }
+  .card2 {
+    /* Add shadows to create the "card" effect */
+    width: 31%;
+    height: 400px;
+  }
+  body#b.contrasting  .fade-in.appear.card2{
+    /* Add shadows to create the "card" effect */
+    width: 31%;
+    height: 400px;
+   
+  }
   
 }
 @media (max-width:600px){
@@ -1775,6 +1907,31 @@ footer .footer-wrap{
   .home-intro
 {
     min-height: 500px;
+}
+#bg1
+{
+  display: none;
+}
+ img#bg1
+{
+  display: none;
+}
+#text1{
+  display: none; 
+}
+#bg2
+{
+  display: block;
+}
+ img#bg2
+{
+  height: 100%;
+  display: block;
+}
+#text2{
+  display: block;
+
+  
 }
 .opis
 {
