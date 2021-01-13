@@ -1284,6 +1284,8 @@ div.footerCopy{
     border-radius: 10px;
   }
   .header{
+    position: sticky;
+    top: 10;
     background: transparent;
     border: none;
     max-width: 100%;
@@ -1296,6 +1298,7 @@ div.footerCopy{
     border-radius: 10px;
   }
   .header.contrasting{
+    position: sticky;
     background: transparent;
     border: none;
     max-width: 100%;
@@ -1326,8 +1329,8 @@ body#b.contrasting .fade-in.appear {
     height: 100vh;
     width: 100%;
     max-width: 350px;
-    top: 100%;
-    right: -200%;
+    top: 0%;
+    right: 0;
     background: white;
     display: block;
     padding: 1rem;
@@ -1403,7 +1406,11 @@ body#b.contrasting .fade-in.appear {
    border-top: 0;
  }
   .menu-items.open {
-    transform: translateY(0);
+    transform: translateY(-10deg);
+    /* height: fit-content; */
+  }
+  .menu-items.open {
+    transform: translateY(-10deg);
     /* height: fit-content; */
   }
 
