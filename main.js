@@ -228,16 +228,106 @@ if (darkMode == "1") {
 // link po dwukrotnym kliknieńciu myszka
 jQuery(function($) {
   $('#golink').click(function() {
+     $( "#test1" ).toggleClass( "teraz" );
+      return false;
+  }).dblclick(function() {
+      window.location = this.href;
+      return false;
+  }).keydown(function(event) {
+    switch (event.which) {
+        case 32: // Space
+        $( "#test1" ).toggleClass( "teraz" );   
+            return false;
+    }
+}) .keydown(function(event) {
+  switch (event.which) {
+      case 13: // Enter
+          window.location = this.href;
+          return false;
+  }
+});
+});
+jQuery(function($) {
+  $('#golink2').click(function() {
+    $( "#test2" ).toggleClass( "teraz" );
+      return false;
+  }).dblclick(function() {
+      window.location = this.href;
+      return false;
+  }).keydown(function(event) {
+    switch (event.which) {
+        case 32: // Space
+        $( "#test2" ).toggleClass( "teraz" );   
+            return false;
+    }
+}) .keydown(function(event) {
+  switch (event.which) {
+      case 13: // Enter
+          window.location = this.href;
+          return false;
+  }
+});
+});
+jQuery(function($) {
+  $('#golink3').click(function() {
+    $( "#test3" ).toggleClass( "teraz" );
+      return false;
+  }).dblclick(function() {
+      window.location = this.href;
+      return false;
+  }).keydown(function(event) {
+    switch (event.which) {
+        case 32: // Space
+        $( "#test3" ).toggleClass( "teraz" );   
+            return false;
+    }
+}) .keydown(function(event) {
+  switch (event.which) {
+      case 13: // Enter
+          window.location = this.href;
+          return false;
+  }
+});
+});
+jQuery(function($) {
+  $('#golink4').click(function() {
+    $( "#test4" ).toggleClass( "teraz" );
       return false;
   }).dblclick(function() {
       window.location = this.href;
       return false;
   }).keydown(function(event) {
       switch (event.which) {
-          case 13: // Enter
           case 32: // Space
-              window.location = this.href;
+          $( "#test4" ).toggleClass( "teraz" );   
               return false;
       }
-  });
+  }) .keydown(function(event) {
+    switch (event.which) {
+        case 13: // Enter
+            window.location = this.href;
+            return false;
+    }
 });
+});
+jQuery(function($) {
+  $('#golink0').click(function() {
+      return false;
+  }).dblclick(function() {
+      window.location = this.href;
+      return false;
+  }).keydown(function(event) {
+      switch (event.which) {
+          case 32: // Space
+          $( "#test5" ).toggleClass( "teraz" );   
+              return false;
+      }
+  }) .keydown(function(event) {
+    switch (event.which) {
+        case 13: // Enter
+            window.location = this.href;
+            return false;
+    }
+});
+});
+

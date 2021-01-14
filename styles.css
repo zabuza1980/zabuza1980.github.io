@@ -288,8 +288,13 @@ z-index: 1;
   color: rgb(43, 137, 214);
   padding: 0 1rem;
 }
-.menu-items li:hover .mega-menu {
-  top: 50px;
+/* .menu-items li:hover .mega-menu {
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+} */
+.teraz {
+  top: 65px;
   opacity: 1;
   visibility: visible;
 }
@@ -539,6 +544,7 @@ body#b .contrasting a{
 }
 #text
 {
+
     position: relative;
     color: #fff;
     font-size: 2em;
@@ -546,7 +552,9 @@ body#b .contrasting a{
 }
 
 .home-intro .samologo{
- display: inline;
+  display: inline;
+  width: 1000px;
+  height: 1000px;
 }.home-intro.contrasting .samologo{
   display: none;
  }
@@ -554,6 +562,8 @@ body#b .contrasting a{
   display: none;
  }.home-intro.contrasting .samologo2{
    display: inline;
+   width: 1000px;
+      height: 1000px;
   }
 .home-about {
   padding: 0em 2em;
@@ -1048,15 +1058,16 @@ img.slide-in.from-left.appear {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: 0;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  height: 250px;
+  height: 125px;
   z-index: 0;
 }
-.swiper-container h2{
+.swiper-container h2
+{
+  justify-items: center;
   color: rgb(43, 137, 214);
   /* font-family: 'Poppins', sans-serif; */
   position: absolute;
@@ -1064,22 +1075,29 @@ img.slide-in.from-left.appear {
   border-bottom: 1px solid black;
   
 }
+.swiper-container h6{
+  color: rgb(43, 137, 214);
+  /* font-family: 'Poppins', sans-serif; */
+  font-size: 6px;
+  
+}
 
 
 .swiper-slide 
 {
-  margin-top: 50px;
+  margin-top: 25px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
 }
+
 .swiper-image{
   display: flex;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
 }
 /* book 3d */
 .mizga
@@ -1214,8 +1232,10 @@ ul#footerMediaLinks li:hover span.git, ul#footerMediaLinks li:hover a.git {
    color: #f1502f; 
 }
 
-div#footerLogo img{
-  width: 60%;
+div#footerLogo svg{
+  display: block;
+  width: 100%;
+  height: 100px;
   margin: 5% 0;
 }
 
@@ -1232,6 +1252,20 @@ div.footerCopy{
     width: 450px;
     margin: 1% 0; 
   }
+  .home-intro .samologo{
+    display: inline;
+    width: 1000px;
+      height: 1000px;
+   }.home-intro.contrasting .samologo{
+     display: none;
+    }
+    .home-intro .samologo2{
+     display: none;
+    }.home-intro.contrasting .samologo2{
+      display: inline;
+      width: 1000px;
+      height: 1000px;
+     }
   .home-about {
    
     padding: 0em 2em 2em 2em;
@@ -1277,6 +1311,20 @@ div.footerCopy{
     {
         min-height: 500px;
     }
+    .home-intro .samologo{
+      display: inline;
+      width: 700px;
+        height: 700px;
+     }.home-intro.contrasting .samologo{
+       display: none;
+      }
+      .home-intro .samologo2{
+       display: none;
+      }.home-intro.contrasting .samologo2{
+        display: inline;
+        width: 700px;
+        height: 700px;
+       }
     body{
       font-size: 15px;
     }
@@ -1486,7 +1534,7 @@ body#b.contrasting .fade-in.appear {
     height: 100vh;
     width: 100%;
     max-width: 100%;
-    top: 0;
+    top: 100px;
     right: 0;
     background: white;
     display: block;
@@ -1825,6 +1873,21 @@ footer .footer-wrap{
 }
 }
 @media (max-width:800px){
+
+  .home-intro .samologo{
+    display: inline;
+    width: 600px;
+      height: 600px;
+   }.home-intro.contrasting .samologo{
+     display: none;
+    }
+    .home-intro .samologo2{
+     display: none;
+    }.home-intro.contrasting .samologo2{
+      display: inline;
+      width: 600px;
+      height: 600px;
+     }
   footer .footer-wrap{
     width: 100%;
     padding-left: 10%;
@@ -1908,6 +1971,20 @@ footer .footer-wrap{
 {
     min-height: 500px;
 }
+.home-intro .samologo{
+  display: inline;
+  width: 350px;
+    height: 350px;
+ }.home-intro.contrasting .samologo{
+   display: none;
+  }
+  .home-intro .samologo2{
+   display: none;
+  }.home-intro.contrasting .samologo2{
+    display: inline;
+    width: 350px;
+    height: 350px;
+   }
 #bg1
 {
   display: none;
@@ -2019,4 +2096,22 @@ body#b.contrasting  .fade-in.appear.card2{
   ul#footerMediaLinks li.media4:hover, ul#footerMediaLinks li:hover span.git, ul#footerMediaLinks li:hover a.git {
      background-color: #f1502f; color: white;
      }
+}
+@media (max-width:400px){
+
+  .home-intro .samologo{
+    display: inline;
+    width: 250px;
+      height: 250px;
+   }.home-intro.contrasting .samologo{
+     display: none;
+    }
+    .home-intro .samologo2{
+     display: none;
+    }.home-intro.contrasting .samologo2{
+      display: inline;
+      width: 250px;
+      height: 250px;
+     }
+
 }
