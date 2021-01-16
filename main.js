@@ -310,24 +310,5 @@ jQuery(function($) {
     }
 });
 });
-jQuery(function($) {
-  $('#golink0').click(function() {
-      return false;
-  }).dblclick(function() {
-      window.location = this.href;
-      return false;
-  }).keydown(function(event) {
-      switch (event.which) {
-          case 32: // Space
-          $( "#test5" ).toggleClass( "teraz" );   
-              return false;
-      }
-  }) .keydown(function(event) {
-    switch (event.which) {
-        case 13: // Enter
-            window.location = this.href;
-            return false;
-    }
-});
-});
+
 
