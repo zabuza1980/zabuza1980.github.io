@@ -907,10 +907,27 @@ img.slide-in.from-left.appear {
   position: relative;
   justify-self: flex-end;
 }
+
 .slide-in.from-left.appear {
   position: relative;
   /* justify-self:end; */
+
 }
+p.slide-in.from-left.appear {
+  position: relative;
+  /* justify-self:end; */
+  text-align: justify;
+  font-size: 1.6em;
+
+}
+p.slide-in.from-right.appear {
+  position: relative;
+  /* justify-self:end; */
+  text-align: justify;
+  font-size: 1.6em;
+
+}
+
 
 .from-right {
   grid-column: 3 / 4;
@@ -2169,6 +2186,13 @@ div.footerCopy{
       padding: 0em 2em 2em 2em;
      
     }
+    p.slide-in.from-left.appear {
+      font-size: 1.2em;
+    
+    }
+    p.slide-in.from-right.appear {
+      font-size: 1.2em;
+    }
     .card2 {
       /* Add shadows to create the "card" effect */
       
@@ -2225,6 +2249,13 @@ div.footerCopy{
   .home-about.contrasting {
     padding: 0em 2em 2em 2em;
    
+  }
+  p.slide-in.from-left.appear {
+    font-size: 0.9em;
+  
+  }
+  p.slide-in.from-right.appear {
+    font-size: 0.9em;
   }
   .card2 {
     /* Add shadows to create the "card" effect */
@@ -2506,7 +2537,8 @@ body#b.contrasting .fade-in.appear {
    }
   p.slide-in.from-right.appear {
     margin-right: 0;
-    
+    text-align: justify;
+    font-size: 1.5em;
   }
   .card {
     /* Add shadows to create the "card" effect */
@@ -2592,6 +2624,10 @@ padding: 10px;
   padding: 5px 10px 10px 10px;
   line-height: 1.2;
 }
+p.home-about-para {
+  font-size: 1.2em;
+}
+
 
 footer .footer-wrap{
   width: 100%;
@@ -2639,6 +2675,13 @@ footer .footer-wrap{
   div.footerCopy{
     font-size: 0.8em;
     justify-content: center;
+  }
+  p.slide-in.from-left.appear {
+    font-size: 1em;
+  
+  }
+  p.slide-in.from-right.appear {
+    font-size: 1em;
   }
   .card {
     /* Add shadows to create the "card" effect */
