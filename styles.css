@@ -2038,7 +2038,8 @@ footer p{
   footer .footer-wrap a{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 25%;
   }
 .widgetFooter{
   width: calc(85%/3);
@@ -2059,9 +2060,11 @@ ul#footerUsefulLink, ul#footerMediaLinks{
   padding: 0;
   line-height: 40px;
   text-transform: capitalize;
+  /* text-align: left; */
 }
 ul#footerUsefulLink li, ul#footerMediaLinks li{
   cursor: pointer;
+  /* text-align: left; */
   /* transition: border-bottom 3s ease-in; */
 }
 ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
@@ -2240,6 +2243,12 @@ div.footerCopy{
   footer{
     /* height: 220px; */
     min-height: 200px;
+  }
+  footer .footer-wrap a{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 15%;
   }
   .home-about {
    
@@ -2676,6 +2685,12 @@ footer .footer-wrap{
     font-size: 0.8em;
     justify-content: center;
   }
+  footer .footer-wrap a{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 30%;
+  }
   p.slide-in.from-left.appear {
     font-size: 1em;
   
@@ -2766,6 +2781,12 @@ footer .footer-wrap{
   }
   footer{
     min-height: auto;
+  }
+    footer .footer-wrap a{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 40%;
   }
   .main-content iframe{
     justify-items: center;
@@ -2880,7 +2901,7 @@ body#b.contrasting  .fade-in.appear.card2{
   ul#footerUsefulLink li, ul#footerMediaLinks li{
     float: left;
     flex: 1;
-    text-align: center;
+    text-align: justify;
     font-size: 1.5em;
   }
   ul#footerUsefulLink li p, ul#footerMediaLinks li p{
@@ -2926,6 +2947,12 @@ body#b.contrasting  .fade-in.appear.card2{
       width: 100%;
       height: 400px;
       overflow: hidden;
+    }
+    footer .footer-wrap a{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      margin-left: 36%;
     }
 
 }
