@@ -873,7 +873,7 @@ body#b.contrasting .fade-in.appear:hover {
   text-align: justify;
 }
 .article img{
-  width:70%;
+  width:30%;
   margin-right: auto;
   margin-left: auto;
  
@@ -2808,6 +2808,12 @@ footer .footer-wrap{
     height: 450px;
     overflow: hidden;
   }
+  .article img{
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+   
+  }
   
 }
 @media (max-width:600px){
@@ -3027,6 +3033,12 @@ body#b.contrasting  .fade-in.appear.card2{
       justify-content: center;
       justify-items: center;
    
+    }
+    .article img{
+      width:90%;
+      margin-right: auto;
+      margin-left: auto;
+     
     }
     .perły{
       display: flex;
