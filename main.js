@@ -101,24 +101,25 @@ window.addEventListener('scroll', function(){
     bg.style.top = value * 0.5 + 'px';
     text.style.top = value * 0.7 + 'px';
 })
-let bg1 = document.getElementById("bg1");
-let text1 = document.getElementById("text1");
+// pomysł na kolejne sekcje z ruchomymi napisami
+// let bg1 = document.getElementById("bg1");
+// let text1 = document.getElementById("text1");
 
-window.addEventListener('scroll', function(){
-    var value1 = window.scrollY;
+// window.addEventListener('scroll', function(){
+//     var value1 = window.scrollY;
 
-    bg1.style.top = (value1-1450) * 0.5 + 'px';
-    text1.style.top = (value1-1250) * 0.7 + 'px';
-})
-let bg2 = document.getElementById("bg2");
-let text2 = document.getElementById("text2");
+//     bg1.style.top = (value1-1450) * 0.5 + 'px';
+//     text1.style.top = (value1-1250) * 0.7 + 'px';
+// })
+// let bg2 = document.getElementById("bg2");
+// let text2 = document.getElementById("text2");
 
-window.addEventListener('scroll', function(){
-    var value1 = window.scrollY;
+// window.addEventListener('scroll', function(){
+//     var value1 = window.scrollY;
 
-    bg2.style.top = (value1-1950) * 0.5 + 'px';
-    text2.style.top = (value1-1850) * 0.7 + 'px';
-})
+//     bg2.style.top = (value1-1950) * 0.5 + 'px';
+//     text2.style.top = (value1-1850) * 0.7 + 'px';
+// })
 // cookie logick + kontrast
 
 function setCookie(name,value,days) {
@@ -310,5 +311,6 @@ jQuery(function($) {
     }
 });
 });
-
+// galeria bootstrap
+baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
 

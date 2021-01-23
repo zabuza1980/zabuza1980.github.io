@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gminna Biblioteka Publiczna w Krasnem</title>
+    <title>Muzeum</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -13,11 +14,10 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="style/compact-gallery.css">
+</head>
 </head>
 <body id="b">
   <section class="main-content">       
@@ -832,11 +832,11 @@
                       <section>
                         <h2>Kościół</h2>
                         <ul class="mega-links">
-                          <li><a href="#">Krypty</a></li>
-                          <li><a href="#">Prezbiterium</a></li>
-                          <li><a href="#">Skarbiec</a></li>
-                          <li><a href="#">Freski</a></li>
-                          <li><a href="#">Obrazy</a></li>
+                          <li><a href="muzeum.html#freski">Freski</a></li>
+                          <li><a href="muzeum.html#nagrobki">Nagrobki</a></li>
+                          <li><a href="muzeum.html#epitafia">Epitafia</a></li>
+                          <li><a href="muzeum.html#ołtarze">Ołtarze</a></li>
+                          <li><a href="muzeum.html#katakumby">Katakumby</a></li>
                         </ul>
                       </section>
                     </div>
@@ -1037,18 +1037,14 @@
       <br>
       <p> Oto pakiet nowości książkowych dla dorosłych. Wśród nich między innymi, długo wyczekiwane kolejne tomy popularnych powieści,
       biografie, reportaże, a dla fanów dreszczyku emocji – nowe kryminały i thrillery.</p>
-  
-      
-    <div class="clear">
       <br>
-    
-    </div>
-    
+      <br>
+      
+     </div>
+     
     <div id="anno">
     
-      <section class="container main-section">
-          <a id="s_na-skroty" class="anchor"></a>
-          <div class="main-section-header">
+      <section class="container main-section">          <div class="main-section-header">
               <h2><a href="#">DLA DOROSŁYCH</a></h2>
               <span class="underline"></span>
           </div>
@@ -1064,7 +1060,7 @@
                       </a>
                   </li>
                   <li class="col-lg-2 col-md-4 col-sm-6 col-xs-12 tile tile-training">
-                      <a href="#" style="padding-top: 83%">
+                      <a href="horror.html" style="padding-top: 83%">
                           <span class="triangle" style="border-top-color: #427dad;"></span>
                           <div class="tile-header-now" >
                               <div style="border-bottom: 2px solid #427dad;">
@@ -1157,7 +1153,7 @@
                     </a>
                 </li>
                 <li class="col-lg-2 col-md-4 col-sm-6 col-xs-12 tile tile-training">
-                    <a href="#" style="padding-top: 83%">
+                    <a href="romanse.html" style="padding-top: 83%">
                         <span class="triangle" style="border-top-color: #427dad;"></span>
                         <div class="tile-header-now" >
                             <div style="border-bottom: 2px solid #427dad;">
@@ -1316,19 +1312,21 @@
                           
                             
                         </section>		</div>  
-  </section>
-    <div class="swiper-container">
-      <hr>
-      <h2>Nasi partnerzy</h2>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><h6>Radio Rekord Ciechanów</h6><img src="img/RadioRekord.png" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><h6>Gmina Krasne</h6><img src="img/GminaKrasne.png" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><h6>Danuta Błażejczyk</h6><img src="img/Błazejczyk.jpg" alt="" class="swiper-image" ></div>
-            <div class="swiper-slide"><h6>Rad-Pol Meble</h6><img src="img/RadPol.jpg" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><h6>Muzeum w Opinogórze</h6><img src="img/Opinogóra.jpg" alt="" class="swiper-image"></div>
-            <div class="swiper-slide"><h6>Biblioteaka w Przasnyszu</h6><img src="img/PrzasnyszBiblioteka.jpg" alt="" class="swiper-image"></div>
-        
-          </div>
+                      
+                      <div class="swiper-container">
+                        <hr>
+                        <h2>Nasi partnerzy</h2>
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide"><h6>Radio Rekord Ciechanów</h6><img src="img/partnerzy/RadioRekord.png" alt="" class="swiper-image"></div>
+                              <div class="swiper-slide"><h6>Gmina Krasne</h6><img src="img/partnerzy/GminaKrasne.png" alt="" class="swiper-image"></div>
+                              <div class="swiper-slide"><h6>Danuta Błażejczyk</h6><img src="img/partnerzy/Błazejczyk.jpg" alt="" class="swiper-image" ></div>
+                              <div class="swiper-slide"><h6>Rad-Pol Meble</h6><img src="img/partnerzy/RadPol.jpg" alt="" class="swiper-image"></div>
+                              <div class="swiper-slide"><h6>Muzeum w Opinogórze</h6><img src="img/partnerzy/Opinogóra.jpg" alt="" class="swiper-image"></div>
+                              <div class="swiper-slide"><h6>Biblioteaka w Przasnyszu</h6><img src="img/partnerzy/PrzasnyszBiblioteka.jpg" alt="" class="swiper-image"></div>
+                          
+                            </div>
+                          </div>
+                        </section>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
       </div>
@@ -1345,11 +1343,11 @@
                 <p>O nas</p></a>
               </li>
               <li title="Pracownicy">
-               <a href="pracownicy.html"><span class="usefulLinksIcons">
-                  <i class="far fa-handshake" style="color: #00CED1;"></i>
-                </span>
-                <p>Pracownicy</p></a>
-              </li>
+                <a href="pracownicy.html"><span class="usefulLinksIcons">
+                   <i class="fas fa-users" style="color: #00CED1;"></i>
+                 </span>
+                 <p>Pracownicy</p></a>
+               </li>
               <li title="Napisz do nas">
                 <a href="kontakt.html"> <span class="usefulLinksIcons" >
                   <i class="far fa-envelope" style="color: #00CED1;"></i>
@@ -1585,7 +1583,9 @@
           </div>
         </div>
       </footer>
-    
-    
+      <script src="main.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
 </body>
 </html>

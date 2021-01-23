@@ -130,7 +130,7 @@ iframe{
 }
 .main-content iframe{
   justify-items: center;
-  width: 100%;
+  width: 50%;
   height: 500px;
   border-radius: 40px;
  }
@@ -309,10 +309,14 @@ z-index: 1;
   visibility: visible;
 } */
 .teraz {
-  top: 45px;
+  top: 55px;
   opacity: 1;
   visibility: visible;
   z-index: 20;
+}
+.perły{
+  display: flex;
+  flex-direction: row;
 }
 
 .content .col .read-more:hover {
@@ -585,6 +589,7 @@ body#b .contrasting a{
   padding: 0em 2em;
   width: 90vw;
   max-width: 90vw;
+  
   margin: 0 auto;
   background-color: white;
   text-align: center;
@@ -859,7 +864,32 @@ body#b.contrasting .fade-in.appear:hover {
 .literatura p{
   color:  rgb(43, 137, 214);
 }
-
+.article{
+  width:70%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.article img{
+  width:70%;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+.article hr{
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px solid black;
+}
+.small{
+  width:5%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 3px solid black;
+}
 .clear
 {
   
@@ -952,7 +982,7 @@ p.slide-in.from-right.appear {
   transform: translateX(0);
   opacity: 1;
 }
-/* karty imgBx */
+/* pracownicy */
 .pracownicy{
   margin: 0;
   padding: 0;
@@ -1060,6 +1090,16 @@ p.slide-in.from-right.appear {
   font-family: 'Nunito', sans-serif;
   
 }
+/* przycisk powrotu do nowości */
+.powrot{
+  /* display: flex; */
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  z-index: 10;
+}
 
 
 /* swiper */
@@ -1122,6 +1162,7 @@ p.slide-in.from-right.appear {
 /* book 3d */
 .mizga
 {
+  width: 93%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1194,6 +1235,10 @@ section#buda .book img
 */		
 		
 .tile-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 	padding: 0;
 	/*
 	padding: 0 46px;
@@ -1201,6 +1246,7 @@ section#buda .book img
 	margin: 0;
 	font-size: 1.25em;
 }
+
 
 @media (min-width: 768px) {
 	.tile-container {
@@ -1701,6 +1747,9 @@ section#buda .book img
             #anno {
               background-color:  #427dad;
             }
+            .tile-container.row{
+              margin-bottom: 50px;
+            }
             #anno .underline { border-color: #fff; }
             
             .triangle {
@@ -1784,7 +1833,8 @@ section#buda .book img
 	.align-right {
 		float: right;
 		margin: 5px 0 5px 5px;
-	}
+  }
+  
 }
 
             #polona { 
@@ -2597,6 +2647,8 @@ body#b.contrasting .fade-in.appear {
     flex-direction: column;
     margin-right: 5px;
     margin-left: 5px;
+    width: 100%;
+    height: 600px;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -2647,6 +2699,21 @@ footer .footer-wrap{
   width: 100%;
   height: 450px;
   overflow: hidden;
+}
+.article{
+  width:90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}.article h2{
+  width:90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 }
 @media (max-width:800px){
@@ -2766,7 +2833,7 @@ footer .footer-wrap{
     margin-left: auto;
     margin-right: auto;
     width: 65%;
-    height: 450px;
+    height: 250px;
     overflow: hidden;
   }
 
@@ -2875,6 +2942,7 @@ body#b.contrasting  .fade-in.appear.card2{
     padding: 0em 2em 2em 2em;
     width: 100vw;
     max-width: 100vw;
+    height: 100%;
     margin: 0 auto;
     background-color: white;
   }
@@ -2909,13 +2977,13 @@ body#b.contrasting  .fade-in.appear.card2{
   }
   ul#footerUsefulLink li:hover, ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
      color: white;
-     background-color: #00CED1;
+     background-color: #063e58;
   }
   ul#footerMediaLinks li.media1:hover, ul#footerMediaLinks li:hover span.fb, ul#footerMediaLinks li:hover a.fb {
-     background-color: #3b5998; color: white; 
+     background-color: #1DA1F2; color: white; 
   }
   ul#footerMediaLinks li.media2:hover, ul#footerMediaLinks li:hover span.twit, ul#footerMediaLinks li:hover a.twit {
-     background-color: #1DA1F2; color: white;
+     background-color: #3b5998; color: white;
      }
   ul#footerMediaLinks li.media3:hover, ul#footerMediaLinks li:hover span.insta, ul#footerMediaLinks li:hover a.insta {
      background-color: #ffc838; color: white;
@@ -2947,6 +3015,22 @@ body#b.contrasting  .fade-in.appear.card2{
       width: 100%;
       height: 400px;
       overflow: hidden;
+    }
+    .columns {
+      display: flex;
+      flex-direction: column;
+      margin-right: 5px;
+      margin-left: 5px;
+      width: 100%;
+      height: 900px;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+   
+    }
+    .perły{
+      display: flex;
+      flex-direction: column;
     }
     footer .footer-wrap a{
       display: flex;
