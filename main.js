@@ -165,6 +165,16 @@ function enableDarkMode() {
   $( ".home-about" ).addClass( "contrasting" );
   // document.querySelector('.home-about').classList.toggle('contrasting');
   $( ".home-more-stuff" ).addClass( "contrasting" );
+  $( ".tile-container.row" ).addClass( "contrasting" );
+  $( ".tile-header" ).addClass( "contrasting" );
+  $( ".main-section-header" ).addClass( "contrasting" );
+  $( ".tile-circle-content-wrapper" ).addClass( "contrasting" );
+  $( "#anno" ).addClass( "contrasting" );
+  $( "#polona" ).addClass( "contrasting" );
+  $( ".p-tile-l" ).addClass( "contrasting" );
+  $( "#polona-blog" ).addClass( "contrasting" );
+  $( "footer" ).addClass( "contrasting" );
+  $( ".pracownicy" ).addClass( "contrasting" );
   // document.querySelector('.home-more-stuff').classList.toggle('contrasting');
   // $( ".card" ).addClass( "contrasting" );
   // // document.querySelector('.card').classList.toggle('contrasting');
@@ -178,7 +188,6 @@ function enableDarkMode() {
 }
 
 function disableDarkMode() {
-$( "body" ).removeClass( "dark" );
 $( "body" ).removeClass( "contrasting" );
   // document.body.classList.toggle('contrasting');
   $( "header" ).removeClass( "contrasting" );
@@ -198,6 +207,16 @@ $( "body" ).removeClass( "contrasting" );
   $( ".home-about" ).removeClass( "contrasting" );
   // document.querySelector('.home-about').classList.toggle('contrasting');
   $( ".home-more-stuff" ).removeClass( "contrasting" );
+  $( ".tile-container.row" ).removeClass( "contrasting" );
+  $( ".tile-header" ).removeClass( "contrasting" );
+  $( ".main-section-header" ).removeClass( "contrasting" );
+  $( ".tile-circle-content-wrapper" ).removeClass( "contrasting" );
+  $( "#anno" ).removeClass( "contrasting" );
+  $( "#polona" ).removeClass( "contrasting" );
+  $( ".p-tile-l" ).removeClass( "contrasting" );
+  $( "#polona-blog" ).removeClass( "contrasting" );
+  $( "footer" ).removeClass( "contrasting" );
+  $( ".pracownicy" ).removeClass( "contrasting" );
   // document.querySelector('.home-more-stuff').classList.toggle('contrasting');
   // $( ".card" ).removeClass( "contrasting" );
   // // document.querySelector('.card').classList.toggle('contrasting');

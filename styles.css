@@ -33,6 +33,10 @@ body {
   font-size: 20px;
   line-height: 1.4;
 }
+body.contrasting {
+  background: black;
+  color:gold;
+}
 /* body.contrasting .header.contrasting .menu-items{
   background: black;
 } */
@@ -439,7 +443,8 @@ box-shadow: 0 0 0 5px #fff;
   color: #427dad;
  
 }
-  
+
+
 /* section */
 .section {
   position: absolute;
@@ -1155,6 +1160,23 @@ p.slide-in.from-right.appear {
   max-height: 6000px;
   background:white;
 }
+.pracownicy.contrasting{
+  background:black;
+  color: gold;
+}
+.pracownicy.contrasting .box h3 {
+  background:black;
+  color: gold;
+}
+.pracownicy.contrasting .reveal-hidden p {
+  background:black;
+  color: gold;
+}
+.pracownicy.contrasting .reveal-hidden {
+  background:black;
+  color: gold;
+  border: none;
+}
 .home-about.contrasting .pracownicy{
   background:black;
 }
@@ -1162,6 +1184,7 @@ p.slide-in.from-right.appear {
   text-align: left;
   margin: 20px;
 }
+
 .pracownicy hr{
   width: 90%;
   margin-right: auto;
@@ -1438,14 +1461,14 @@ section#buda .book img
 	.tile-container li { padding: 15px; }
 		
 
-/*
-@media (max-width: 630px) {
+
+/* @media (max-width: 630px) {
 	.tile {
-		width: 100%;
+		width: 50%;
 	}
 
-}
-*/
+} */
+
 
 		.tile > a {
 			display: block;
@@ -1553,7 +1576,7 @@ section#buda .book img
       @media (max-width: 990px) {
         .tile-header-now {
           padding: 20px;
-          padding: 18% 25px 20px;
+          padding: 1% 5px 2px;
         }
         .tile-training .tile-header-now h3 {
           color: #3a3a3a;
@@ -1561,8 +1584,99 @@ section#buda .book img
           top: 1px;
           font-weight: 500;
           margin-top: 1px;
-          height: 11em;
+          height: 5em;
         }
+      
+      }
+      @media (max-width: 800px) {
+        .tile-header-now {
+          padding: 20px;
+          padding: 1% 5px 2px;
+        }
+        .tile-training .tile-header-now h3 {
+          color: #3a3a3a;
+          font-size: 15px;
+          top: 1px;
+          font-weight: 500;
+          margin-top: 1px;
+          height: 6em;
+        }
+      
+      }
+      @media (max-width: 767px) {
+        .tile-header-now {
+          padding: 20px;
+          padding: 1% 5px 2px;
+        }
+        .tile-training .tile-header-now h3 {
+          color: #3a3a3a;
+          font-size: 15px;
+          top: 1px;
+          font-weight: 500;
+          margin-top: 1px;
+          height: 10em;
+        }
+      
+      }
+      @media (max-width: 575px) {
+        .tile-header-now {
+          padding: 20px;
+          padding: 10% 5px 2px;
+        }
+        .tile-training .tile-header-now h3 {
+          color: #3a3a3a;
+          font-size: 15px;
+          top: 1px;
+          font-weight: 500;
+          margin-top: 1px;
+          height: 20em;
+        }
+      
+      }
+      @media (max-width: 500px) {
+        .tile-header-now {
+          padding: 20px;
+          padding: 10% 5px 2px;
+        }
+        .tile-training .tile-header-now h3 {
+          color: #3a3a3a;
+          font-size: 15px;
+          top: 1px;
+          font-weight: 500;
+          margin-top: 1px;
+          height: 8em;
+        }
+      
+      }
+      @media (max-width: 470px) {
+        .tile-header-now {
+          padding: 20px;
+          padding: 10% 5px 2px;
+        }
+        .tile-training .tile-header-now h3 {
+          color: #3a3a3a;
+          font-size: 15px;
+          top: 1px;
+          font-weight: 500;
+          margin-top: 1px;
+          height: 6em;
+        }
+      
+      }
+      @media (max-width: 380px) {
+        .tile-header-now {
+          padding: 20px;
+          padding: 10% 5px 2px;
+        }
+        .tile-training .tile-header-now h3 {
+          color: #3a3a3a;
+          font-size: 15px;
+          top: 1px;
+          font-weight: 500;
+          margin-top: 1px;
+          height: 4em;
+        }
+      
       }
       /* koniec stylizacji */
 /*
@@ -1666,6 +1780,10 @@ section#buda .book img
 			
 			.tile-training .tile-header h3 {
 				color: #3a3a3a;
+				font-size: 22px;
+      }
+      .tile-training .tile-header.contrasting h3 {
+				color: gold;
 				font-size: 22px;
 			}
 
@@ -1847,9 +1965,18 @@ section#buda .book img
 							letter-spacing: 0.05em;
 							color: #fff;
 							text-align: center;
+            }
+            .tile-circle-content-wrapper .tile-header.contrasting h3 {
+							font-family: 'Advent Pro', sans-serif;
+							font-weight: 700;
+							font-size: 1.375em;
+							letter-spacing: 0.05em;
+							color: gold;
+							text-align: center;
 						}
 
-						a.tile-circle:hover .tile-circle-content-wrapper .tile-header h3 { color: #2d3237; }
+            a.tile-circle:hover .tile-circle-content-wrapper .tile-header h3 { color: #2d3237; }
+            a.tile-circle:hover .tile-circle-content-wrapper .tile-header.contrasting h3 { color:  #427dad; }
             /* tiles end */
             /* class plus */
             .anchor {
@@ -1858,7 +1985,8 @@ section#buda .book img
               top: -74px;
             }
             .main-section-header {
-              padding-top: 50px;
+              margin-top: 50px;
+              margin-bottom: 100px;
               text-align: center;
             }
             
@@ -1893,6 +2021,7 @@ section#buda .book img
             
             #stat .main-section-header h2 a { color: #f2f3f4; }
             #anno .main-section-header h2 a { color: #fff; }
+            #anno .main-section-header.contrasting h2 a { color:gold; }
             .underline {
               width: 114px;
               border: 1px solid #2e3338;
@@ -1904,10 +2033,14 @@ section#buda .book img
             #anno {
               background-color:  #427dad;
             }
+            #anno.contrasting {
+              background-color:  black;
+            }
             .tile-container.row{
               margin-bottom: 50px;
             }
             #anno .underline { border-color: #fff; }
+            #anno .main-section-header.contrasting .underline { border-color:gold; }
             
             .triangle {
               width: 0;
@@ -1930,6 +2063,13 @@ section#buda .book img
 }
 #polona-blog { 
 	background-color: #fbfbfb;
+	/*
+	background: url('../img/bck_polona.jpg') #2f3640 repeat;
+	background-attachment: fixed;
+	*/
+}
+#polona-blog.contrasting { 
+	background-color:black;
 	/*
 	background: url('../img/bck_polona.jpg') #2f3640 repeat;
 	background-attachment: fixed;
@@ -1974,10 +2114,20 @@ section#buda .book img
 	font-weight: 500;
 	color: #2f3640;
 }
+#polona-blog.contrasting h3 {
+	letter-spacing: 0.03em;
+	font-size: 1.4375em;
+	font-weight: 500;
+	color: gold;
+}
 
 #polona-blog .author {
 	margin-bottom: 20px;
 	color: #2f3640;
+}
+#polona-blog.contrasting .author {
+	margin-bottom: 20px;
+	color:gold;
 }
 
 @media (min-width: 768px) {
@@ -2000,10 +2150,9 @@ section#buda .book img
               /*background-size: cover;*/
               background-attachment: fixed;
             }
-            #polona .main-section-header  a { 
-              color: #fff; 
-            }
+            #polona .main-section-header  a { color: #fff;}
             #polona .underline { border-color: #fff; }
+            #polona.contrasting .underline { border-color:gold; }
             #polona .main-section > p {
               padding-top: 12px;
               padding-bottom: 35px;
@@ -2012,6 +2161,7 @@ section#buda .book img
               text-align: center;
               line-height: 1.56474;
             }
+            #polona.contrasting .main-section > p {color:gold;}
             @media (min-width: 768px) {
               #polona .main-section > p { font-size: 1em; }
             }
@@ -2059,6 +2209,12 @@ section#buda .book img
 	position: relative;
 	background-color: #fff;
 	text-align: center;
+}
+.p-tile-l.contrasting a {
+	background-color: black;
+}
+.p-tile-l.contrasting .header{
+	background-color: black;
 }
 
 .p-tile-l  a:hover {
@@ -2147,6 +2303,12 @@ section#buda .book img
 	font-style: italic;
 	color: #2f3640;
 }
+.p-tile-l.contrasting .header p.cite {
+	margin: 0;
+	font-weight: 300;
+	font-style: italic;
+	color: gold;
+}
 
 @media (min-width: 768px) {
 	.p-tile-l .header p.cite {
@@ -2233,11 +2395,17 @@ footer a{
  text-decoration: none;
  color: white;
 }
-footer .footer-wrap{
+footer .footer-wrap {
   width: 80%;
   margin: 0 auto;
   padding-left: 10%;
   color: white;
+}
+footer.contrasting .footer-wrap h4{
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 10%;
+  color:gold;
 }
 footer p{
   margin-bottom: 1px;
@@ -2304,6 +2472,13 @@ div.footerCopy{
   text-align: center;
   padding-bottom: 5px;
   border-top: 1px solid #ccc;
+}
+footer.contrasting div.footerCopy{
+  clear: both;
+  color: gold;
+  text-align: center;
+  padding-bottom: 5px;
+  border-top: 1px solid gold;
 }
   /* MEDIA QUERY */
 @media (max-width:2500px){
@@ -2582,7 +2757,7 @@ body#b.contrasting .fade-in.appear {
     height: 100vh;
     width: 100%;
     max-width: 350px;
-    top: 0%;
+    top: -1000px;
     right: 0;
     background: white;
     display: block;
@@ -2619,7 +2794,7 @@ body#b.contrasting .fade-in.appear {
     height: 100vh;
     width: 100%;
     max-width: 100%;
-    top: 0px;
+    top: 0%;
     right: 0;
     background: white;
     display: block;
@@ -2636,7 +2811,7 @@ body#b.contrasting .fade-in.appear {
     height: 100vh;
     width: 100%;
     max-width: 100%;
-    top: 0;
+    top: 0%;
     right: 0;
     background: black;
     display: block;
@@ -3069,6 +3244,12 @@ footer .footer-wrap{
 
   
 } */
+.col-xs-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 .opis
 {
   width: 90%;
