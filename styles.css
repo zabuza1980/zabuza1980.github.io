@@ -322,7 +322,124 @@ z-index: 1;
 .content .col .read-more:hover {
   color: #ff652f;
 }
+/* title dla nowości */
+.header1{
+ text-size-adjust: 100%;
+ color: #444;
+ font: inherit;
+ -webkit-font-smoothing: antialiased;
+ visibility: visible;
+ margin: 0;
+ display: block;
+ box-sizing: border-box;
+ position: relative;
+ margin-bottom: 50px;
+ padding: 30px 20px 55px;
+ border: 1px solid #e8e8e8;
+ text-align: center;
+ box-shadow: inset 0 0 0 7px #fff;
+ 
+}
+.header1.contrasting{
+  text-size-adjust: 100%;
+  color:gold;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  visibility: visible;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 50px;
+  padding: 30px 20px 55px;
+  border: 1px solid gold;
+  text-align: center;
+  box-shadow: none;
+ }
+.header1-brow {
+  text-size-adjust: 100%;
+  color: #444;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  visibility: visible;
+  text-align: center;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  margin: -40px 0 25px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.header1.contrasting .header1-brow{
+  color:gold;
+}
+.header1 span{
+padding: 0 5px 0 10px;
+background: #fff;
+box-shadow: 0 0 0 5px #fff;
 
+}
+.header1.contrasting span{
+  background: black;
+  box-shadow: none;
+}
+.header1-main{
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  visibility: visible;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #191b22;
+  font: bolder 10px/1.2 Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 0
+}
+.header1.contrasting .header1-main{
+  color: gold;
+}
+.header1-main span{
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  line-height: 50px;
+}
+.header1:after { 
+  position: absolute; 
+  left: 50%; 
+  top: 100%; 
+  width: 50px; 
+  height: 50px; 
+  content: '📂'; 
+  border-radius: 50%; 
+  background: #e8e8e8; 
+  box-shadow: 0 0 0 7px #fff;
+  color: #111;
+  font-size: 20px; 
+  font-weight: bold; 
+  line-height: 50px; 
+  text-align: center;
+  -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%); 
+  } 
+.header1.contrasting:after{ 
+ 
+  background: gold; 
+  box-shadow: none;
+  color: #427dad;
+ 
+}
+  
 /* section */
 .section {
   position: absolute;
@@ -517,13 +634,53 @@ body#b .contrasting a{
     pointer-events: none;
     z-index: 0;
 }
-#bg1
+.miedzy{
+  width: 100%;
+  height: fit-content;
+  background-color: #fbfbfb;
+	
+  background: url('img/Historia.png') #2f3640 center;
+  background-size: 100%;
+  
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+ 
+  position: relative;
+
+
+}
+.wieża{
+  background: url('img/perłyKrasnego2.png') #2f3640 center;
+  background-size: cover;  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+.kościół{
+  background: url('img/perłyKrasnego2.png') #2f3640 center;
+  background-size: cover;  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.miedzy::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient( rgb(199, 95, 25),rgb(255, 255, 255));
+    z-index: 3;
+}
+/* intersekcje paralux */
+/* #bg1
 {
     z-index: 0;
 }
  img#bg1
 {
-    height: 200%;
+    height: 100%;
 }
 #text1{
   position: relative;
@@ -549,7 +706,7 @@ body#b .contrasting a{
   font-size: 2em;
   z-index: 0;
   
-}
+} */
 .home-intro.contrasting img
 {
     position: absolute;
@@ -2885,8 +3042,10 @@ footer .footer-wrap{
     width: 350px;
     height: 350px;
    }
-#bg1
+   /* pomysł na intrsekcjie bs  i napisy ruchome paralux */
+/* #bg1
 {
+  
   display: none;
 }
  img#bg1
@@ -2909,7 +3068,7 @@ footer .footer-wrap{
   display: block;
 
   
-}
+} */
 .opis
 {
   width: 90%;
