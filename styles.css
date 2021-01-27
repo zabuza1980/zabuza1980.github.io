@@ -3380,6 +3380,18 @@ body#b.contrasting  .fade-in.appear.card2{
       margin-left: auto;
      
     }
+    .article p img{
+      width:90%;
+      margin-right: auto;
+      margin-left: auto;
+     
+    }
+   img{
+      width:90%;
+      margin-right: auto;
+      margin-left: auto;
+     
+    }
     .perły{
       display: flex;
       flex-direction: column;
