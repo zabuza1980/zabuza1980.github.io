@@ -900,7 +900,7 @@ body#b.contrasting  .fade-in.appear.card2{
   }
 .fade-in {
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 .fade-in.appear {
@@ -2765,7 +2765,7 @@ body#b.contrasting .fade-in.appear {
     line-height: 3rem;
     overflow-y: auto;
     transform: translateY(-200vh);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
  
     z-index: -1;
   }
@@ -2802,7 +2802,7 @@ body#b.contrasting .fade-in.appear {
     line-height: 3rem;
     overflow-y: auto;
     transform: translateY(0);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
  
     z-index: 0;
   }
