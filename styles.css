@@ -551,7 +551,7 @@ body#b .contrasting a{
     width: 100%;
     height: 40px;
     background: linear-gradient( rgb(199, 95, 25),rgb(255, 255, 255));
-    z-index: 3;
+    z-index: 1;
 }
 .home-intro.kontakt::before
 {
@@ -561,7 +561,7 @@ body#b .contrasting a{
     width: 100%;
     height: 40px;
     background: linear-gradient( rgb(2, 140, 195),rgb(255, 255, 255));
-    z-index: 3;
+    z-index: 1;
 }
 .home-intro.pracownicy::before
 {
@@ -571,7 +571,7 @@ body#b .contrasting a{
     width: 100%;
     height: 40px;
     background: linear-gradient( rgb(16, 18, 19),rgb(255, 255, 255));
-    z-index: 3;
+    z-index: 1;
 }
 .home-intro::after
 {
@@ -647,6 +647,22 @@ body#b .contrasting a{
   background: url('img/Historia.jpg') #2f3640 center;
   background-size: 100%;
   
+  background-repeat: repeat-y;
+	background-attachment: fixed;
+ 
+  position: relative;
+
+
+}
+body.contrasting .miedzy{
+  width: 100%;
+  height: fit-content;
+  background-color: #fbfbfb;
+	
+  background: url('img/Historia.jpg') rgb(61, 61, 61) center;
+  background-size: 100%;
+  background-blend-mode: multiply;
+  
   background-repeat: no-repeat;
 	background-attachment: fixed;
  
@@ -654,6 +670,7 @@ body#b .contrasting a{
 
 
 }
+
 .wieża{
   background: url('img/perłyKrasnego2.jpg') #2f3640 center;
   background-size: cover;  
@@ -661,22 +678,62 @@ body#b .contrasting a{
   background-repeat: no-repeat;
 
 }
+body.contrasting .miedzy.wieża{
+  background: url('img/perłyKrasnego2.jpg') #2f3640 center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
 .kościół{
   background: url('img/perłyKrasnego2.jpg') #2f3640 center;
   background-size: cover;  
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+body.contrasting .miedzy.kościół{
+  background: url('img/perłyKrasnego2.jpg') #2f3640 center;
+  background-blend-mode: multiply; 
+  background-attachment: fixed;
+}
 
 .miedzy::after
+{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient( rgb(199, 95, 25),rgb(255, 255, 255));
+    z-index: 1;
+}
+.miedzy::before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient( #427dad, rgb(255, 255, 255));
+    z-index: 1;
+}
+body.contrasting .miedzy::after
 {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 40px;
-    background: linear-gradient( rgb(199, 95, 25),rgb(255, 255, 255));
-    z-index: 3;
+    background: linear-gradient( rgb(37, 37, 37),rgb(0, 0, 0));
+    z-index: 1;
+}
+body.contrasting .miedzy::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(37, 37, 37));
+    z-index: 1;
 }
 /* intersekcje paralux */
 /* #bg1
@@ -1034,11 +1091,44 @@ body#b.contrasting .fade-in.appear:hover {
   font-weight: 400;
   text-align: justify;
 }
+.subarticle{
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.lightimg{
+  display: block;
+}
+body.contrasting .lightimg{
+  display: none;
+}
+.darkimg{
+  display: none;
+}
+body.contrasting .darkimg{
+  display: block;
+}
 .article img{
   width:30%;
   margin-right: auto;
   margin-left: auto;
- 
+}
+.katalogonline{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.katalogonline iframe{
+  position:relative; 
+  border:0; 
+  height:2100px; 
+  width:100%;
+  border-radius: 0;
+  border: none;
 }
 .article hr{
   width:100%;
@@ -1046,6 +1136,7 @@ body#b.contrasting .fade-in.appear:hover {
   margin-left: auto;
   border-top: 2px solid black;
 }
+
 .small{
   width:5%;
   margin-right: auto;
@@ -1339,6 +1430,8 @@ p.slide-in.from-right.appear {
   height: 75px;
   width: 75px;
 }
+
+
 /* book 3d */
 .mizga
 {
@@ -1528,6 +1621,10 @@ section#buda .book img
 				/*padding: 28% 10px 10px;*/
 				position: absolute;
 				top: 0;				
+      }
+    
+		  .tile-header.aka.contrasting{
+			border: solid 1px gold;
       }
       /* nowości */
       .tile-header-now {
@@ -1986,7 +2083,7 @@ section#buda .book img
             }
             .main-section-header {
               margin-top: 50px;
-              margin-bottom: 100px;
+              margin-bottom: 50px;
               text-align: center;
             }
             
@@ -2033,8 +2130,18 @@ section#buda .book img
             #anno {
               background-color:  #427dad;
             }
+            
             #anno.contrasting {
               background-color:  black;
+            }
+       
+            #anno.contrasting li a{
+              background-color: black;
+              border: solid 1px #427dad;
+            }
+            #anno.contrasting li a h3{
+              color:gold;
+              
             }
             .tile-container.row{
               margin-bottom: 50px;
@@ -2053,13 +2160,49 @@ section#buda .book img
               top: 0;
               left: 50%;
             }
+            /* katalog zamias anno */
+           
+            .katalog .main-section-header h2 a { color: #fff; }
+            .katalog .main-section-header.contrasting h2 a { color:gold; }
+         
+           
+            .katalog {
+              background-color:  #427dad;
+            }
+            body.contrasting .katalog {
+              background-color:  black;
+            }
+            
+            body.contrasting .katalog li a{
+              background-color: black;
+              border: solid 1px #427dad;
+            }
+            body.contrasting .katalog li a h3{
+              color:gold;
+              
+            }
+            .tile-container.row{
+              margin-bottom: 50px;
+            }
+            .katalog .underline { border-color: #fff; }
+            .katalog .main-section-header.contrasting .underline { border-color:gold; }
+        
             /*
 	polona section
 */
 #fb{
+  padding: 20px 0px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: url(img/background1.jpg) #2f3640;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#fb.contrasting{
+ background-blend-mode: multiply;
 }
 #polona-blog { 
 	background-color: #fbfbfb;
@@ -2593,6 +2736,9 @@ footer.contrasting div.footerCopy{
       height: 260px;
      
     }
+    .katalogonline iframe{ 
+      height:2200px; 
+    }
 
 }
 @media (max-width:1300px){
@@ -2609,11 +2755,17 @@ footer.contrasting div.footerCopy{
       padding: 0em 2em 2em 2em;
      
     }
+    .katalogonline iframe{ 
+      height:2300px; 
+    }
 }
 @media (max-width:1050px){
   #footerLogo {
     width: 280px;
     margin: 1% 0; 
+  }
+  .katalogonline iframe{ 
+    height:2800px; 
   }
   body{
     font-size: 12px;
@@ -2744,6 +2896,9 @@ footer.contrasting div.footerCopy{
   }
   .home-intro h5{
     font-size: 4vw;
+  }
+  .katalogonline iframe{ 
+    height:2200px; 
   }
 
 body#b.contrasting .fade-in.appear {
@@ -3101,6 +3256,9 @@ footer .footer-wrap{
     /* Add shadows to create the "card" effect */
     width: 31%;
   }
+  .katalogonline iframe{ 
+    height:2800px; 
+  }
   body#b.contrasting  .fade-in.appear.card{
     /* Add shadows to create the "card" effect */
     width: 31%;
@@ -3184,6 +3342,12 @@ footer .footer-wrap{
     margin-right: 0.5px;
     margin-left:  0.5px;
   }
+  .katalogonline iframe{ 
+    height:3150px;
+    position: relative;
+    border: none;
+    border-radius: 0; 
+  }
   footer{
     min-height: auto;
   }
@@ -3193,12 +3357,7 @@ footer .footer-wrap{
     justify-content: left;
     margin-left: 40%;
   }
-  .main-content iframe{
-    justify-items: center;
-    width: 100%;
-    height: 300px;
-    border-radius: 40px;
-   }
+
   .home-intro
 {
     min-height: 500px;
@@ -3347,6 +3506,12 @@ body#b.contrasting  .fade-in.appear.card2{
    }.home-intro.contrasting .samologo{
      display: none;
     }
+    .tile-default .tile-header h3{
+      font-size: 0.6em;
+    }
+    .tile-header{
+      padding: 28% 2% 1% 2%;
+    }
     .home-intro .samologo2{
      display: none;
     }.home-intro.contrasting .samologo2{
@@ -3374,6 +3539,7 @@ body#b.contrasting  .fade-in.appear.card2{
       justify-items: center;
    
     }
+   
     .article img{
       width:90%;
       margin-right: auto;
@@ -3386,7 +3552,24 @@ body#b.contrasting  .fade-in.appear.card2{
       margin-left: auto;
      
     }
-   
+    .article {
+      width:92%;
+      margin-right: auto;
+      margin-left: auto;
+     
+    }
+    .main-content iframe{
+      width: 100%;
+    }
+    .katalogonline iframe{ 
+      height:3250px;
+      width: 100%;
+      padding: 0;
+      margin: 0; 
+    }
+    .katalogonline { 
+      width: 100%; 
+    }
     .perły{
       display: flex;
       flex-direction: column;

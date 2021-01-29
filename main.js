@@ -170,6 +170,7 @@ function enableDarkMode() {
   $( ".main-section-header" ).addClass( "contrasting" );
   $( ".tile-circle-content-wrapper" ).addClass( "contrasting" );
   $( "#anno" ).addClass( "contrasting" );
+  $( "#fb" ).addClass( "contrasting" );
   $( "#polona" ).addClass( "contrasting" );
   $( ".p-tile-l" ).addClass( "contrasting" );
   $( "#polona-blog" ).addClass( "contrasting" );
@@ -212,6 +213,7 @@ $( "body" ).removeClass( "contrasting" );
   $( ".main-section-header" ).removeClass( "contrasting" );
   $( ".tile-circle-content-wrapper" ).removeClass( "contrasting" );
   $( "#anno" ).removeClass( "contrasting" );
+  $( "#fb" ).removeClass( "contrasting" );
   $( "#polona" ).removeClass( "contrasting" );
   $( ".p-tile-l" ).removeClass( "contrasting" );
   $( "#polona-blog" ).removeClass( "contrasting" );
