@@ -30,10 +30,24 @@ body {
   background:  white;
   color:black;
   overflow-x: hidden;
-  font-size: 24px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+body#b {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  background:  white;
+  color:black;
+  overflow-x: hidden;
+  font-size: 1.4rem;
   line-height: 1.4;
 }
 body.contrasting {
+  background: black;
+  color:gold;
+}
+body#b.contrasting {
   background: black;
   color:gold;
 }
@@ -974,14 +988,14 @@ body.contrasting strong{
   margin-bottom: 20px;  */
 }
 body#b.contrasting .fade-in.appear {
-  padding: 10px;
+  /* padding: 10px; */
   opacity: 1;
-  line-height: 1.2;
+  /* line-height: 1.2;
   width: 33%;
   height: 250px;
   box-sizing: border-box;
   border: 1px solid gold;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 /* .fade-in.appear:hover {
   box-shadow: 0px 0px 10px 1px  grey;
@@ -1216,14 +1230,14 @@ p.slide-in.from-left.appear {
   position: relative;
   /* justify-self:end; */
   text-align: justify;
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
 
 }
 p.slide-in.from-right.appear {
   position: relative;
   /* justify-self:end; */
   text-align: justify;
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
 
 }
 
@@ -3293,11 +3307,11 @@ footer.contrasting div.footerCopy{
      
     }
     p.slide-in.from-left.appear {
-      font-size: 1.2em;
+      /* font-size: 1.2em; */
     
     }
     p.slide-in.from-right.appear {
-      font-size: 1.2em;
+      /* font-size: 1.2em; */
     }
 
     .katalogonline iframe{ 
@@ -3368,11 +3382,11 @@ footer.contrasting div.footerCopy{
   padding: 0 0.5rem;
 }
   p.slide-in.from-left.appear {
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
   
   }
   p.slide-in.from-right.appear {
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
   }
 
   #polona-blog .img-wrapper {
@@ -3488,10 +3502,10 @@ footer.contrasting div.footerCopy{
   }
 
 body#b.contrasting .fade-in.appear {
-  width: 100%;
+  /* width: 100%;
   height: 250px;
   box-sizing: border-box;
-  border: 1px solid gold;
+  border: 1px solid gold; */
 }
   .header .menu-items {
     position: absolute;
@@ -3670,7 +3684,7 @@ body#b.contrasting .fade-in.appear {
   p.slide-in.from-right.appear {
     margin-right: 0;
     text-align: justify;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
   }
  
   .columns {
@@ -3817,11 +3831,11 @@ footer .footer-wrap{
     margin-left: 30%;
   }
   p.slide-in.from-left.appear {
-    font-size: 1em;
+    /* font-size: 1em; */
   
   }
   p.slide-in.from-right.appear {
-    font-size: 1em;
+    /* font-size: 1em; */
   }
 
   .reveal-hidden{
