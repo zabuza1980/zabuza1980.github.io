@@ -332,6 +332,157 @@ jQuery(function($) {
     }
 });
 });
+
 // galeria bootstrap
 baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
+
+// slajderuniwersalny
+
+const slides=document.querySelector(".slider").children;
+const prev=document.querySelector(".prev");
+const next=document.querySelector(".next");
+const pause=document.querySelector(".pause");
+const play=document.querySelector(".play");
+const indicator=document.querySelector(".indicator");
+let index=0;
+
+
+  prev.addEventListener("click",function(){
+      prevSlide();
+      updateCircleIndicator(); 
+ 
+  })
+  prev.addEventListener("keydown",function(){
+    if (event.keyCode === 13)
+   prevSlide();
+   updateCircleIndicator(); 
+
+  })
+
+  next.addEventListener("click",function(){
+     nextSlide(); 
+     updateCircleIndicator();
+    
+     
+  })
+  next.addEventListener("keydown",function(){
+    if (event.keyCode === 13)
+   nextSlide(); 
+   updateCircleIndicator();
+  
+   
+  })
+  play.addEventListener("click",function(){
+     playSlide();
+     updateCircleIndicator(); 
+     resetTimer();      
+  })
+  play.addEventListener("keydown",function(){
+    if (event.keyCode === 13)
+   playSlide();
+   updateCircleIndicator(); 
+   resetTimer();
+  })
+  pause.addEventListener("click",function(){
+   pauseSlide();
+   updateCircleIndicator(); 
+   
+  })
+  pause.addEventListener("keydown",function(){
+    if (event.keyCode === 13) 
+   pauseSlide();
+   updateCircleIndicator(); 
+
+  })
+
+  // create circle indicators
+   function circleIndicator(){
+       for(let i=0; i< slides.length; i++){
+         const div=document.createElement("div");
+               div.innerHTML=i+1;
+               div.setAttribute("onclick","indicateSlide(this)")
+               div.id=i;
+               if(i==0){
+                 div.className="active";
+               }
+              indicator.appendChild(div);
+       }
+   }
+   circleIndicator();
+
+   function indicateSlide(element){
+        index=element.id;
+        changeSlide();
+        updateCircleIndicator();
+        
+   }
+    
+   function updateCircleIndicator(){
+     for(let i=0; i<indicator.children.length; i++){
+       indicator.children[i].classList.remove("active");
+     }
+     indicator.children[index].classList.add("active");
+   }
+
+  function prevSlide(){
+     if(index==0){
+       index=slides.length-1;
+     }
+     else{
+       index--;
+     }
+     changeSlide();
+  }
+
+  function nextSlide(){
+     if(index==slides.length-1){
+       index=0;
+     }
+     else{
+       index++;
+     }
+     changeSlide();
+  }
+  function pauseSlide(){
+   clearInterval(timer);
+   }
+  function playSlide(){
+   timer=setInterval(autoPlay,2000);   
+    }
+
+   function nextSlide(){
+     if(index==slides.length-1){
+         index=0;
+     }
+     else{
+         index++;
+     }
+     changeSlide();
+   }
+
+  function changeSlide(){
+           for(let i=0; i<slides.length; i++){
+              slides[i].classList.remove("active");
+           }
+
+      slides[index].classList.add("active");
+  }
+
+  function resetTimer(){
+      // when click to indicator or controls button 
+      // stop timer 
+      clearInterval(timer);
+      // then started again timer
+      timer=setInterval(autoPlay,8000);
+  }
+
+ 
+ function autoPlay(){
+     nextSlide();
+     updateCircleIndicator();
+ }
+
+ let timer=setInterval(autoPlay,8000);
+
+
 
