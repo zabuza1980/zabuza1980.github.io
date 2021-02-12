@@ -199,6 +199,7 @@ iframe{
 #grad {
   background-image: linear-gradient(to bottom right, #f9f7f7, #dbe2ef);
 }
+
 #grad.contrasting {
   background-image: linear-gradient(to bottom right, #112d4e, #3f72af);
 }
@@ -3758,6 +3759,13 @@ footer.contrasting div.footerCopy{
 
 }
 @media screen and (max-width: 970px) {
+  #grad {
+    background-image: none;
+  }
+  #grad.contrasting {
+    background-image: none;
+  }
+
   #footerLogo {
     width: 280px;
     margin: 1% 0; 
