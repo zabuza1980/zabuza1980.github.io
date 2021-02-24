@@ -177,8 +177,11 @@ h2{
     filter: brightness(20%);
 }
 i{ 
-  color: #427dad;
+  color: #112d4e;
   padding: 0px 10px;
+}
+body#b.contrasting i{
+  color: gold
 }
 iframe{
   width: 80%;
@@ -1530,8 +1533,9 @@ body#b.contrasting .article img{
   grid-column: 2 / 3;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  color: #427dad;
+  color: #112d4e;
   padding: 0px 10px;
+  align-items: center;
 
 }
 
