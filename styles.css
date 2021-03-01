@@ -1783,7 +1783,7 @@ p.slide-in.from-right.appear {
 .swiper-container h2
 {
   justify-items: center;
-  color: rgb(43, 137, 214);
+  color: #112d4e;
   font-family: 'Poppins', sans-serif;
   position: absolute;
   font-size: 12px;
@@ -1795,7 +1795,7 @@ p.slide-in.from-right.appear {
   
 }
 .swiper-container h6{
-  color: rgb(43, 137, 214);
+  color: #112d4e;
   /* font-family: 'Poppins', sans-serif; */
   margin-top: 0;
   margin-bottom: 0;
