@@ -198,6 +198,43 @@ iframe{
  color :gold;
  background-color: #112d4e;
 }
+/* baner informacyjny ciasteczka */
+
+#CookieAlert{
+  position: fixed;
+  font-size: 0.75rem;
+  font-family: Arial, Verdana, sans-serif;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-top: 1px solid #e9e9e9;
+  z-index: 1000;
+  text-align: center;
+  }
+  #CookieAlert p {
+      font-size: 0.75rem;
+      color: #333333;
+      line-height: 1.5em;
+      text-shadow: 0px 0px 1px #ffffff;
+  }
+  #CookieAlert a.zamknij {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      line-height: 22px;
+      font-size: 0.75rem;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      background-color: #da272b;
+      box-shadow: 0px 1px 2px rgb(0 0 0 / 75%);
+  }
 /* gradient background */
 #grad {
   background-image: linear-gradient(to bottom right, #f9f7f7, #dbe2ef);
@@ -297,17 +334,17 @@ z-index: 1;
 
 .mega-menu.expandable.contrasting .content .col section h2 {
   background-color: #112d4e;
-  color: rgb(43, 137, 214);
+  color: #3f72af);
 }
 .mega-menu.akt.expandable.contrasting .content .col h2 {
   background-color: #112d4e;
-  color: rgb(43, 137, 214);
+  color: #3f72af;
 }
 
 
 .mega-menu .content {
   background:#f9f7f7;
-  color:  rgb(43, 137, 214);
+  color:  #3f72af;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -367,12 +404,12 @@ body#b .contrasting a img{
 .content .col .read-more {
   display: inline-block;
   padding-top: 1rem;
-  color: #427dad;
+  color: #3f72af;
   transition: color 0.3s ease;
 }
 .col .mega-links li,
 .col .mega-links li a {
-  color: rgb(43, 137, 214);
+  color: #3f72af;
   padding: 0 1rem;
 }
 /* .menu-items li:hover .mega-menu {
@@ -508,7 +545,7 @@ box-shadow: 0 0 0 5px #f9f7f7;
  
   background: gold; 
   box-shadow: none;
-  color: #427dad;
+  color: #3f72af;
  
 }
 
@@ -554,7 +591,7 @@ box-shadow: 0 0 0 5px #f9f7f7;
 .menu-btn__lines::after {
   width: 1.5rem;
   height: 0.1rem;
-  background:  #427dad;
+  background:  #3f72af;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__lines::before {
@@ -570,11 +607,11 @@ box-shadow: 0 0 0 5px #f9f7f7;
 }
 .menu-btn.open .menu-btn__lines::before {
   transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-  background: #427dad;
+  background: #3f72af;
 }
 .menu-btn.open .menu-btn__lines::after {
   transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-  background: #427dad;
+  background: #3f72af;
 }
 
 /* slajderuniwersalny */
@@ -856,7 +893,7 @@ body#b .contrasting a{
   color: gold;
 }
 body#b .contrasting a:hover{
-  color: #427dad;
+  color: #3f72af;
   transition: 0.3s ease-in-out;
   
 }
@@ -1062,7 +1099,7 @@ body.contrasting .miedzy.kościół{
     top: -10px;
     width: 100%;
     height: 50px;
-    background: linear-gradient( #427dad, rgb(255, 255, 255));
+    background: linear-gradient( #3f72af, rgb(255, 255, 255));
     z-index: 1;
 }
 body.contrasting .miedzy::after
@@ -2364,7 +2401,7 @@ section#buda .book img
 			background-color: #2d3237;
 		}
 
-		a.tile-circle:hover { background-color: #427dad;	}
+		a.tile-circle:hover { background-color: #3f72af;	}
 		
 			.inner-circle-wrapper {
 				width: 100%;
@@ -2378,7 +2415,7 @@ section#buda .book img
 				.inner-circle {					
 					width: 100%;
 					height: 100%;
-					border: 1px solid  #427dad;
+					border: 1px solid  #3f72af;
 					border-radius: 50%;
 					display: table;
 					table-layout:fixed;
@@ -2432,7 +2469,7 @@ section#buda .book img
 						}
 
             a.tile-circle:hover .tile-circle-content-wrapper .tile-header h3 { color: #2d3237; }
-            a.tile-circle:hover .tile-circle-content-wrapper .tile-header.contrasting h3 { color:  #427dad; }
+            a.tile-circle:hover .tile-circle-content-wrapper .tile-header.contrasting h3 { color:  #3f72af; }
             /* tiles end */
             /* class plus */
             .anchor {
@@ -2489,7 +2526,7 @@ section#buda .book img
               border-color: inherit;
             }
             #anno {
-              background-color:  #427dad;
+              background-color:  #3f72af;
             }
             
             #anno.contrasting {
@@ -2498,7 +2535,7 @@ section#buda .book img
        
             #anno.contrasting li a{
               background-color: #112d4e;
-              border: solid 1px #427dad;
+              border: solid 1px #3f72af;
             }
             #anno.contrasting li a h3{
               color:gold;
@@ -2514,7 +2551,7 @@ section#buda .book img
               width: 0;
             height: 0;
             margin-left: -8px;
-            border-top: 8px solid #427dad;
+            border-top: 8px solid #3f72af;
             border-right: 8px solid transparent;
             border-left: 8px solid transparent;
               position: absolute;
@@ -2528,7 +2565,7 @@ section#buda .book img
          
            
             .katalog {
-              background-color:  #427dad;
+              background-color:  #3f72af;
             }
             body.contrasting .katalog {
               background-color:  #112d4e;
@@ -2536,7 +2573,7 @@ section#buda .book img
             
             body.contrasting .katalog li a{
               background-color: #112d4e;
-              border: solid 1px #427dad;
+              border: solid 1px #3f72af;
             }
             body.contrasting .katalog li a h3{
               color:gold;
@@ -2578,7 +2615,7 @@ section#buda .book img
             body.contrasting #form1{
               background-color: rgb(10, 10, 10);
               position: relative;
-              border: solid 1px #427dad;
+              border: solid 1px #3f72af;
               padding: 5px;
               font-size: 1em;
               display: flex;
@@ -2666,7 +2703,7 @@ section#buda .book img
             }
             body.contrasting #form1 input.button1{
               color:gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2680,7 +2717,7 @@ section#buda .book img
             }
             body.contrasting #form1 input.button1:hover{
               color:gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2720,7 +2757,7 @@ section#buda .book img
             }
             body.contrasting #form1 input.button2{
               color: gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2734,7 +2771,7 @@ section#buda .book img
             }
             body.contrasting #form1 input.button2:hover{
               color: gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2765,7 +2802,7 @@ section#buda .book img
             body.contrasting #form2{
               background-color: rgb(10, 10, 10);
               position: relative;
-              border: solid 1px #427dad;
+              border: solid 1px #3f72af;
               padding: 5px;
               font-size: 1em;
               display: flex;
@@ -2853,7 +2890,7 @@ section#buda .book img
             }
             body.contrasting #form2 input.button1{
               color:gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2867,7 +2904,7 @@ section#buda .book img
             }
             body.contrasting #form2 input.button1:hover{
               color:gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2907,7 +2944,7 @@ section#buda .book img
             }
             body.contrasting #form2 input.button2{
               color: gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2921,7 +2958,7 @@ section#buda .book img
             }
             body.contrasting #form2 input.button2:hover{
               color: gold;
-              background: #427dad;
+              background: #3f72af;
               border-radius: 0;
               -webkit-appearance: none;
               outline: none;
@@ -2952,7 +2989,7 @@ section#buda .book img
         body.contrasting #form3{
           background-color: rgb(10, 10, 10);
           position: relative;
-          border: solid 1px #427dad;
+          border: solid 1px #3f72af;
           padding: 5px;
           font-size: 1em;
           display: flex;
@@ -3040,7 +3077,7 @@ section#buda .book img
         }
         body.contrasting #form3 input.button1{
           color:gold;
-          background: #427dad;
+          background: #3f72af;
           border-radius: 0;
           -webkit-appearance: none;
           outline: none;
@@ -3054,7 +3091,7 @@ section#buda .book img
         }
         body.contrasting #form3 input.button1:hover{
           color:gold;
-          background: #427dad;
+          background: #3f72af;
           border-radius: 0;
           -webkit-appearance: none;
           outline: none;
@@ -3094,7 +3131,7 @@ section#buda .book img
         }
         body.contrasting #form3 input.button2{
           color: gold;
-          background: #427dad;
+          background: #3f72af;
           border-radius: 0;
           -webkit-appearance: none;
           outline: none;
@@ -3108,7 +3145,7 @@ section#buda .book img
         }
         body.contrasting #form3 input.button2:hover{
           color: gold;
-          background: #427dad;
+          background: #3f72af;
           border-radius: 0;
           -webkit-appearance: none;
           outline: none;
@@ -3721,7 +3758,7 @@ footer.contrasting div.footerCopy{
   }
   .col .mega-links li,
 .col .mega-links li a {
-  color: rgb(43, 137, 214);
+  color: #3f72af;
   padding: 0 0.5rem;
 }
   p.slide-in.from-left.appear {
@@ -4059,7 +4096,7 @@ body#b.contrasting .fade-in.appear {
     grid-column: 2 / 3;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    color: #427dad;
+    color: #3f72af;
     padding: 0px 10px;
     font-weight: 500;
 
@@ -4558,3 +4595,4 @@ footer .footer-wrap{
     max-width: 100%;
   }
 }
+
