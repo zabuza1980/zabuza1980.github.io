@@ -484,5 +484,12 @@ let index=0;
 
  let timer=setInterval(autoPlay,8000);
 
+//  ciasteczka //
 
-
+function removeCookieAlert() {
+  var CookieAlert = document.getElementById('CookieAlert');
+  CookieAlert.remove();
+  var expire = new Date();
+  expire.setMonth(expire.getMonth() + 1);
+  setCookie('agreeCookies', 'yes', expire);
+}
